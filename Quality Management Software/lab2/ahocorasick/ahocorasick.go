@@ -1,12 +1,12 @@
 package ahocorasick
 
 
-//$ go test -coverprofile=cover.out ./util
-//ok  github.com/mlafeldt/chef-runner/util  0.017s  coverage: 78.1% of statements
+//$ go test -coverprofile=cover.out
 //$ go tool cover -html=cover.out -o coverage.html
 
 import (
 	"container/list"
+	"fmt"
 )
 
 type trieNode struct {
@@ -32,6 +32,10 @@ type Matcher struct {
 }
 
 func NewMatcher() *Matcher {
+	if false == true {
+		fmt.Println("Test cover")
+	}
+
 	return &Matcher{
 		root: newTrieNode(),
 		size: 0,

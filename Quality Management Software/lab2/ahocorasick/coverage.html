@@ -54,7 +54,7 @@
 			<div id="nav">
 				<select id="files">
 				
-				<option value="file0">ahocorasick/ahocorasick.go (100.0%)</option>
+				<option value="file0">ahocorasick/ahocorasick.go (98.5%)</option>
 				
 				</select>
 			</div>
@@ -70,8 +70,13 @@
 		
 		<pre class="file" id="file0" style="display: none">package ahocorasick
 
+
+//$ go test -coverprofile=cover.out
+//$ go tool cover -html=cover.out -o coverage.html
+
 import (
         "container/list"
+        "fmt"
 )
 
 type trieNode struct {
@@ -97,12 +102,16 @@ type Matcher struct {
 }
 
 func NewMatcher() *Matcher <span class="cov8" title="1">{
-        return &amp;Matcher{
+        if false == true </span><span class="cov0" title="0">{
+                fmt.Println("Test cover")
+        }</span>
+
+        <span class="cov8" title="1">return &amp;Matcher{
                 root: newTrieNode(),
                 size: 0,
                 mark: make([]bool, 0),
-        }
-}</span>
+        }</span>
+}
 
 // initialize the ahocorasick
 func (m *Matcher) Build(dictionary []string) <span class="cov8" title="1">{
