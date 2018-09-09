@@ -1,5 +1,10 @@
 package ahocorasick
 
+
+//$ go test -coverprofile=cover.out ./util
+//ok  github.com/mlafeldt/chef-runner/util  0.017s  coverage: 78.1% of statements
+//$ go tool cover -html=cover.out -o coverage.html
+
 import (
 	"container/list"
 )
@@ -35,35 +40,35 @@ func NewMatcher() *Matcher {
 }
 
 // initialize the ahocorasick
-func (this *Matcher) Build(dictionary []string) {
+func (m *Matcher) Build(dictionary []string) {
 	for i, _ := range dictionary {
-		this.insert(dictionary[i])
+		m.insert(dictionary[i])
 	}
-	this.build()
-	this.mark = make([]bool, this.size)
+	m.build()
+	m.mark = make([]bool, m.size)
 }
 
 // string match search
 // return all strings matched as indexes into the original dictionary
-func (this *Matcher) Match(s string) []int {
-	curNode := this.root
-	this.resetMark()
+func (m *Matcher) Match(s string) []int {
+	curNode := m.root
+	m.resetMark()
 	var p *trieNode = nil
 
 	ret := make([]int, 0)
 
 	for _, v := range s {
-		for curNode.child[v] == nil && curNode != this.root {
+		for curNode.child[v] == nil && curNode != m.root {
 			curNode = curNode.fail
 		}
 		curNode = curNode.child[v]
 		if curNode == nil {
-			curNode = this.root
+			curNode = m.root
 		}
 
 		p = curNode
-		for p != this.root && p.count > 0 && !this.mark[p.index] {
-			this.mark[p.index] = true
+		for p != m.root && p.count > 0 && !m.mark[p.index] {
+			m.mark[p.index] = true
 			for i := 0; i < p.count; i++ {
 				ret = append(ret, p.index)
 			}
@@ -75,26 +80,26 @@ func (this *Matcher) Match(s string) []int {
 }
 
 // just return the number of len(Match(s))
-func (this *Matcher) GetMatchResultSize(s string) int {
+func (m *Matcher) GetMatchResultSize(s string) int {
 
-	curNode := this.root
-	this.resetMark()
+	curNode := m.root
+	m.resetMark()
 	var p *trieNode = nil
 
 	num := 0
 
 	for _, v := range s {
-		for curNode.child[v] == nil && curNode != this.root {
+		for curNode.child[v] == nil && curNode != m.root {
 			curNode = curNode.fail
 		}
 		curNode = curNode.child[v]
 		if curNode == nil {
-			curNode = this.root
+			curNode = m.root
 		}
 
 		p = curNode
-		for p != this.root && p.count > 0 && !this.mark[p.index] {
-			this.mark[p.index] = true
+		for p != m.root && p.count > 0 && !m.mark[p.index] {
+			m.mark[p.index] = true
 			num += p.count
 			p = p.fail
 		}
@@ -103,16 +108,16 @@ func (this *Matcher) GetMatchResultSize(s string) int {
 	return num
 }
 
-func (this *Matcher) build() {
+func (m *Matcher) build() {
 	ll := list.New()
-	ll.PushBack(this.root)
+	ll.PushBack(m.root)
 	for ll.Len() > 0 {
 		temp := ll.Remove(ll.Front()).(*trieNode)
 		var p *trieNode = nil
 
 		for i, v := range temp.child {
-			if temp == this.root {
-				v.fail = this.root
+			if temp == m.root {
+				v.fail = m.root
 			} else {
 				p = temp.fail
 				for p != nil {
@@ -123,7 +128,7 @@ func (this *Matcher) build() {
 					p = p.fail
 				}
 				if p == nil {
-					v.fail = this.root
+					v.fail = m.root
 				}
 			}
 			ll.PushBack(v)
@@ -131,8 +136,8 @@ func (this *Matcher) build() {
 	}
 }
 
-func (this *Matcher) insert(s string) {
-	curNode := this.root
+func (m *Matcher) insert(s string) {
+	curNode := m.root
 	for _, v := range s {
 		if curNode.child[v] == nil {
 			curNode.child[v] = newTrieNode()
@@ -140,12 +145,12 @@ func (this *Matcher) insert(s string) {
 		curNode = curNode.child[v]
 	}
 	curNode.count++
-	curNode.index = this.size
-	this.size++
+	curNode.index = m.size
+	m.size++
 }
 
-func (this *Matcher) resetMark() {
-	for i := 0; i < this.size; i++ {
-		this.mark[i] = false
+func (m *Matcher) resetMark() {
+	for i := 0; i < m.size; i++ {
+		m.mark[i] = false
 	}
 }
