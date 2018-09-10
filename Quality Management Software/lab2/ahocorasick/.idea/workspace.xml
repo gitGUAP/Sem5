@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="" />
+    <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ahocorasick.go" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ahocorasick_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +27,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="6" />
+          <entry key="go" value="7" />
           <entry key="html" value="1" />
           <entry key="mod" value="1" />
           <entry key="out" value="2" />
@@ -34,7 +38,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="DTD" value="1" />
-          <entry key="Go" value="6" />
+          <entry key="Go" value="7" />
           <entry key="HTML" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="x86 Plan9 Assembly" value="1" />
@@ -42,14 +46,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="1059" />
-          <entry key="txt" value="1" />
+          <entry key="go" value="1071" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="1059" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Go" value="1071" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -64,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ahocorasick.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2169">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="84" column="27" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="27" />
               <folding>
                 <element signature="e#110#145#0" expanded="true" />
               </folding>
@@ -87,12 +91,22 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="52" column="62" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>GetMatchResultSize</find>
       <find>child</find>
+      <find>MatchSize</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -361,28 +375,25 @@
     <entry file="file://$PROJECT_DIR$/coverage.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-          <folding>
-            <element signature="e#21#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/cover.out">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ahocorasick.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2169">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="84" column="27" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="27" />
           <folding>
             <element signature="e#110#145#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cover.out">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="52" column="62" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="62" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input.txt">
       <provider selected="true" editor-type-id="text-editor">

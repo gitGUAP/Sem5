@@ -36,22 +36,22 @@ func TestHard(t *testing.T) {
 	// Concat dictionary
 	match := strings.Join(dictionary, "")
 
-	l := ac.GetMatchResultSize(match)
+	l := ac.MatchSize(match)
 
 	if l != len(dictionary) {
 		t.Errorf("Length not match: %d and %d", l, len(dictionary))
 	}
 }
 
-func TestIntersection(t *testing.T) {
+func TestIntern(t *testing.T) {
 	ac := NewMatcher()
 
 	dictionary := []string{"hello", "world", "привет", "golang", "c++", "love", "not love"}
 
 	ac.Build(dictionary)
 
-	l := ac.GetMatchResultSize("hello世界, hello, i love golang!!!")
-	exp := 3
+	l := ac.MatchSize("hello世界, hello, привет, love golang!!!")
+	exp := 4
 	if l != exp {
 		t.Errorf("Length not match: %d and %d", l, exp)
 	}
@@ -69,8 +69,8 @@ func TestFile(t *testing.T) {
 		panic(err)
 	}
 
-	l := ac.GetMatchResultSize(string(dat))
-	exp := 3
+	l := ac.MatchSize(string(dat))
+	exp := 4
 	if l != exp {
 		t.Errorf("Length not match: %d and %d", l, exp)
 	}

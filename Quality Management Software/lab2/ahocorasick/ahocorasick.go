@@ -42,7 +42,6 @@ func NewMatcher() *Matcher {
 	}
 }
 
-// initialize the ahocorasick
 func (m *Matcher) Build(dictionary []string) {
 	for i, _ := range dictionary {
 		m.insert(dictionary[i])
@@ -51,7 +50,7 @@ func (m *Matcher) Build(dictionary []string) {
 	m.mark = make([]bool, m.size)
 }
 
-// string match search
+
 // return all strings matched as indexes into the original dictionary
 func (m *Matcher) Match(s string) []int {
 	curNode := m.root
@@ -83,7 +82,7 @@ func (m *Matcher) Match(s string) []int {
 }
 
 // just return the number of len(Match(s))
-func (m *Matcher) GetMatchResultSize(s string) int {
+func (m *Matcher) MatchSize(s string) int {
 
 	curNode := m.root
 	m.resetMark()
