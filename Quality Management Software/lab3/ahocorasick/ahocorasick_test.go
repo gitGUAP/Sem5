@@ -76,7 +76,6 @@ func TestFile(t *testing.T) {
 	}
 }
 
-
 func TestFullCover(t *testing.T) {
 	ac := NewMatcher()
 

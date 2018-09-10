@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ahocorasick_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab2/ahocorasick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/ahocorasick/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab2/ahocorasick/ahocorasick_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/ahocorasick/ahocorasick_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +18,7 @@
     <session id="-1165275787">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -44,13 +45,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="1098" />
+          <entry key="go" value="1071" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="1098" />
+          <entry key="Go" value="1071" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -60,17 +61,32 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-865541842">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="go" value="55" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Go" value="55" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ahocorasick.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="-187">
               <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-              <folding>
-                <element signature="e#110#145#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +108,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="89" selection-end-column="1" />
+            <state relative-caret-position="259">
+              <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -179,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestHard in ahocorasick">
+  <component name="RunManager" selected="Go Test.TestFullCover in ahocorasick">
     <configuration name="Test1 in ahocorasick (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="ahocorasick" />
       <working_directory value="$PROJECT_DIR$" />
@@ -192,15 +208,16 @@
       <pattern value="^Test1$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test1 in ahocorasick" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestFullCover in ahocorasick" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="ahocorasick" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
+      <package value="ahocorasick" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^Test1$" />
+      <pattern value="^TestFullCover$" />
       <method v="2" />
     </configuration>
     <configuration name="TestHard in ahocorasick" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -240,37 +257,22 @@
     </configuration>
     <list>
       <item itemvalue="Go Test.go test ahocorasick (1)" />
-      <item itemvalue="Go Test.Test1 in ahocorasick" />
       <item itemvalue="Go Test.Test1 in ahocorasick (1)" />
       <item itemvalue="Go Test.TestSimple in ahocorasick" />
       <item itemvalue="Go Test.TestHard in ahocorasick" />
+      <item itemvalue="Go Test.TestFullCover in ahocorasick" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestHard in ahocorasick" />
+        <item itemvalue="Go Test.TestFullCover in ahocorasick" />
         <item itemvalue="Go Test.TestSimple in ahocorasick" />
+        <item itemvalue="Go Test.TestHard in ahocorasick" />
         <item itemvalue="Go Test.Test1 in ahocorasick (1)" />
         <item itemvalue="Go Test.go test ahocorasick (1)" />
-        <item itemvalue="Go Test.Test1 in ahocorasick" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 25m 12s.xml">
-      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 26m 16s.xml">
-      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 26m 26s.xml">
-      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 26m 50s.xml">
-      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 27m 48s.xml">
-      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 30m 48s.xml">
       <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -286,6 +288,21 @@
     <history-entry file="TestHard_in_ahocorasick - 2018.09.10 at 19h 57m 01s.xml">
       <configuration name="TestHard in ahocorasick" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestFullCover_in_ahocorasick - 2018.09.10 at 20h 43m 17s.xml">
+      <configuration name="TestFullCover in ahocorasick" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFullCover_in_ahocorasick - 2018.09.10 at 20h 44m 38s.xml">
+      <configuration name="TestFullCover in ahocorasick" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFullCover_in_ahocorasick - 2018.09.10 at 20h 45m 11s.xml">
+      <configuration name="TestFullCover in ahocorasick" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSimple_in_ahocorasick - 2018.09.10 at 20h 46m 14s.xml">
+      <configuration name="TestSimple in ahocorasick" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFullCover_in_ahocorasick - 2018.09.10 at 20h 46m 32s.xml">
+      <configuration name="TestFullCover in ahocorasick" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,19 +317,19 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31424582" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.31424582" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -330,6 +347,18 @@
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <proxy>direct</proxy>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/ahocorasick.go</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://C:/Go/src/container/list/list.go">
@@ -385,18 +414,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ahocorasick.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
+        <state relative-caret-position="-187">
           <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="e#110#145#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="89" selection-end-column="1" />
+        <state relative-caret-position="259">
+          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
         </state>
       </provider>
     </entry>
