@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ahocorasick.go" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ahocorasick_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cover.out" beforeDir="false" afterPath="$PROJECT_DIR$/cover.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~$2.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" afterPath="$PROJECT_DIR$/../~$2.Управление качеством программного обеспечения. Гришин С.А..docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../~WRL3675.tmp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,56 +24,125 @@
     <session id="-1165275787">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="2" />
+          <entry key="go" value="6" />
+          <entry key="html" value="1" />
           <entry key="mod" value="1" />
+          <entry key="out" value="1" />
+          <entry key="s" value="1" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="DTD" value="1" />
-          <entry key="Go" value="2" />
+          <entry key="Go" value="6" />
+          <entry key="HTML" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="x86 Plan9 Assembly" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="101" />
+          <entry key="go" value="1059" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="101" />
+          <entry key="Go" value="1059" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.go.postfix.template.usages.trigger">
+        <counts>
+          <entry key=".if" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ahocorasick.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="35" />
+              <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="50" />
               <folding>
-                <element signature="e#199#227#0" expanded="true" />
+                <element signature="e#110#145#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cover.out">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coverage.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="287">
+              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
-                <element signature="e#21#55#0" expanded="true" />
+                <element signature="e#21#42#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/runtime/panic.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="675" column="59" selection-start-line="675" selection-start-column="59" selection-end-line="675" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/testing/testing.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="765" selection-start-line="765" selection-end-line="765" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/sync/rwmutex.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/Go/src/runtime/asm_amd64.s">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="1333" selection-start-line="1333" selection-end-line="1333" />
             </state>
           </provider>
         </entry>
@@ -81,6 +157,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>GetMatchResultSize</find>
+      <find>child</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -93,8 +170,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ahocorasick_test.go" />
         <option value="$PROJECT_DIR$/ahocorasick.go" />
+        <option value="$PROJECT_DIR$/input.txt" />
+        <option value="$PROJECT_DIR$/ahocorasick_test.go" />
       </list>
     </option>
   </component>
@@ -154,7 +232,54 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.go test ahocorasick (1)">
+  <component name="RunManager" selected="Go Test.TestHard in ahocorasick">
+    <configuration name="Test1 in ahocorasick (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ahocorasick" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="ahocorasick" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test1$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test1 in ahocorasick" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ahocorasick" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test1$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHard in ahocorasick" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ahocorasick" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="ahocorasick" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestHard$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSimple in ahocorasick" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ahocorasick" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="ahocorasick" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestSimple$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go test ahocorasick (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="ahocorasick" />
       <working_directory value="$PROJECT_DIR$" />
@@ -166,43 +291,53 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go test ahocorasick" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="ahocorasick" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <framework value="gocheck" />
-      <kind value="PACKAGE" />
-      <package value="ahocorasick" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Go Test.go test ahocorasick" />
       <item itemvalue="Go Test.go test ahocorasick (1)" />
+      <item itemvalue="Go Test.Test1 in ahocorasick" />
+      <item itemvalue="Go Test.Test1 in ahocorasick (1)" />
+      <item itemvalue="Go Test.TestSimple in ahocorasick" />
+      <item itemvalue="Go Test.TestHard in ahocorasick" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestHard in ahocorasick" />
+        <item itemvalue="Go Test.TestSimple in ahocorasick" />
+        <item itemvalue="Go Test.Test1 in ahocorasick (1)" />
         <item itemvalue="Go Test.go test ahocorasick (1)" />
-        <item itemvalue="Go Test.go test ahocorasick" />
+        <item itemvalue="Go Test.Test1 in ahocorasick" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="go_test_ahocorasick - 2018.09.09 at 20h 49m 22s.xml">
-      <configuration name="go test ahocorasick" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 25m 12s.xml">
+      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_ahocorasick_(1) - 2018.09.09 at 20h 49m 38s.xml">
-      <configuration name="go test ahocorasick (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 26m 16s.xml">
+      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_ahocorasick_(1) - 2018.09.09 at 20h 50m 12s.xml">
-      <configuration name="go test ahocorasick (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 26m 26s.xml">
+      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_ahocorasick_(1) - 2018.09.09 at 20h 51m 09s.xml">
-      <configuration name="go test ahocorasick (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 26m 50s.xml">
+      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="go_test_ahocorasick_(1) - 2018.09.09 at 20h 53m 23s.xml">
-      <configuration name="go test ahocorasick (1)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 27m 48s.xml">
+      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 30m 48s.xml">
+      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test1_in_ahocorasick_(1) - 2018.09.10 at 19h 31m 00s.xml">
+      <configuration name="Test1 in ahocorasick (1)" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSimple_in_ahocorasick - 2018.09.10 at 19h 38m 28s.xml">
+      <configuration name="TestSimple in ahocorasick" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestSimple_in_ahocorasick - 2018.09.10 at 19h 38m 50s.xml">
+      <configuration name="TestSimple in ahocorasick" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestHard_in_ahocorasick - 2018.09.10 at 19h 57m 01s.xml">
+      <configuration name="TestHard in ahocorasick" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -218,25 +353,25 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3295302" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31424582" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,25 +385,73 @@
     <proxy>direct</proxy>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://C:/Go/src/container/list/list.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cover.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/go.mod">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
+    <entry file="file://C:/Go/src/runtime/asm_amd64.s">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="e#21#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="134">
+          <caret line="1333" selection-start-line="1333" selection-end-line="1333" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://C:/Go/src/sync/rwmutex.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/testing/testing.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="765" selection-start-line="765" selection-end-line="765" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="675" column="59" selection-start-line="675" selection-start-column="59" selection-end-line="675" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coverage.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ahocorasick.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="35" />
+          <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="50" />
           <folding>
-            <element signature="e#199#227#0" expanded="true" />
+            <element signature="e#110#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="e#21#42#0" expanded="true" />
           </folding>
         </state>
       </provider>

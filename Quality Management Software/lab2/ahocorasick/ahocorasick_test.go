@@ -1,83 +1,77 @@
 package ahocorasick
 
 import (
+	"io/ioutil"
+	"reflect"
+	"strconv"
+	"strings"
 	"testing"
 )
 
-func Test1(t *testing.T) {
+func TestSimple(t *testing.T) {
 	ac := NewMatcher()
 
-	dictionary := []string{"she", "he", "say", "shr", "her"}
+	dictionary := []string{"0", "1", "11"}
 	ac.Build(dictionary)
 
-	ret := ac.Match("yasherhs")
-	if len(ret) != 3 || ret[0] != 0 || ret[1] != 1 || ret[2] != 4 {
-		t.Fatal()
-	}
+	res := ac.Match("010")
+	exp := []int{0, 1}
 
-	ret = ac.Match("yasherhs")
-	if len(ret) != 3 || ret[0] != 0 || ret[1] != 1 || ret[2] != 4 {
-		t.Fatal()
-	}
-
-	if ac.GetMatchResultSize("yasherhs") != 3 {
-		t.Fatal()
+	if !reflect.DeepEqual(res, exp) {
+		t.Errorf("Got: %d, want: %d.", res, exp)
 	}
 }
 
-func Test2(t *testing.T) {
+func TestHard(t *testing.T) {
 	ac := NewMatcher()
 
-	dictionary := []string{"hello", "世界", "hello世界", "hello"}
+	// Create list of number
+	dictionary := make([]string, 10e5)
+	for i := range dictionary {
+		dictionary[i] = strconv.Itoa(i)
+	}
+
 	ac.Build(dictionary)
 
-	ret := ac.Match("hello世界")
-	if len(ret) != 4 {
-		t.Fatal()
-	}
+	// Concat dictionary
+	match := strings.Join(dictionary, "")
 
-	ret = ac.Match("世界")
-	if len(ret) != 1 {
-		t.Fatal()
-	}
+	l := ac.GetMatchResultSize(match)
 
-	ret = ac.Match("hello")
-	if len(ret) != 2 {
-		t.Fatal()
+	if l != len(dictionary) {
+		t.Errorf("Length not match: %d and %d", l, len(dictionary))
 	}
 }
 
-func Test3(t *testing.T) {
+func TestIntersection(t *testing.T) {
 	ac := NewMatcher()
 
-	dictionary := []string{"abc", "bc", "ac", "bc", "de", "efg", "fgh", "hi", "abcd", "ac"}
+	dictionary := []string{"hello", "world", "привет", "golang", "c++", "love", "not love"}
+
 	ac.Build(dictionary)
 
-	ret := ac.Match("abcdefghij")
-	if len(ret) != ac.GetMatchResultSize("abcdefghij") || len(ret) != 8 {
-		t.Fatal()
+	l := ac.GetMatchResultSize("hello世界, hello, i love golang!!!")
+	exp := 3
+	if l != exp {
+		t.Errorf("Length not match: %d and %d", l, exp)
+	}
+}
+
+func TestFile(t *testing.T) {
+	ac := NewMatcher()
+
+	dictionary := []string{"hello", "world", "привет", "golang", "c++", "love", "not love"}
+
+	ac.Build(dictionary)
+
+	dat, err := ioutil.ReadFile("./input.txt")
+	if err != nil {
+		panic(err)
 	}
 
-	ret = ac.Match("abcdef")
-	if len(ret) != 5 {
-		t.Fatal()
-	}
-
-	ret = ac.Match("acdejefg")
-	if len(ret) != 4 {
-		t.Fatal()
-	}
-
-	if len(ac.Match("abcd")) != 4 {
-		t.Fatal()
-	}
-
-	if len(ac.Match("adefacde")) != 3 {
-		t.Fatal()
-	}
-
-	ret = ac.Match("agbdfgiadafgha")
-	if len(ret) != 1 || dictionary[ret[0]] != "fgh" {
-		t.Fatal()
+	l := ac.GetMatchResultSize(string(dat))
+	exp := 3
+	if l != exp {
+		t.Errorf("Length not match: %d and %d", l, exp)
 	}
 }

@@ -54,7 +54,7 @@
 			<div id="nav">
 				<select id="files">
 				
-				<option value="file0">ahocorasick/ahocorasick.go (98.5%)</option>
+				<option value="file0">ahocorasick/ahocorasick.go (97.1%)</option>
 				
 				</select>
 			</div>
@@ -69,7 +69,6 @@
 		<div id="content">
 		
 		<pre class="file" id="file0" style="display: none">package ahocorasick
-
 
 //$ go test -coverprofile=cover.out
 //$ go tool cover -html=cover.out -o coverage.html
@@ -136,7 +135,7 @@ func (m *Matcher) Match(s string) []int <span class="cov8" title="1">{
                         curNode = curNode.fail
                 }</span>
                 <span class="cov8" title="1">curNode = curNode.child[v]
-                if curNode == nil </span><span class="cov8" title="1">{
+                if curNode == nil </span><span class="cov0" title="0">{
                         curNode = m.root
                 }</span>
 
