@@ -1,0 +1,2 @@
+hello世界, hello, привет,
+love golang!!!"

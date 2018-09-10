@@ -1,4 +1,4 @@
-package ahocorasick
+package main
 
 import (
 	"io/ioutil"
@@ -26,7 +26,7 @@ func TestHard(t *testing.T) {
 	ac := NewMatcher()
 
 	// Create list of number
-	dictionary := make([]string, 10e5)
+	dictionary := make([]string, 10e1)
 	for i := range dictionary {
 		dictionary[i] = strconv.Itoa(i)
 	}
@@ -73,5 +73,17 @@ func TestFile(t *testing.T) {
 	exp := 4
 	if l != exp {
 		t.Errorf("Length not match: %d and %d", l, exp)
+	}
+}
+
+func TestFullCover(t *testing.T) {
+	ac := NewMatcher()
+
+	dictionary := []string{"she", "he", "say", "shr", "her"}
+	ac.Build(dictionary)
+
+	ret := ac.Match("yasherhs")
+	if len(ret) != 3 || ret[0] != 0 || ret[1] != 1 || ret[2] != 4 {
+		t.Fatal()
 	}
 }
