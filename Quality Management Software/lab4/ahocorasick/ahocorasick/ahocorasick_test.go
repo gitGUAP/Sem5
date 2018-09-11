@@ -1,6 +1,7 @@
-package main
+package ahocorasick_test
 
 import (
+	"ahocorasick/ahocorasick"
 	"io/ioutil"
 	"reflect"
 	"strconv"
@@ -9,7 +10,7 @@ import (
 )
 
 func TestSimple(t *testing.T) {
-	ac := NewMatcher()
+	ac := ahocorasick.NewMatcher()
 
 	dictionary := []string{"0", "1", "11"}
 	ac.Build(dictionary)
@@ -23,7 +24,7 @@ func TestSimple(t *testing.T) {
 }
 
 func TestHard(t *testing.T) {
-	ac := NewMatcher()
+	ac := ahocorasick.NewMatcher()
 
 	// Create list of number
 	dictionary := make([]string, 10e1)
@@ -44,7 +45,7 @@ func TestHard(t *testing.T) {
 }
 
 func TestIntern(t *testing.T) {
-	ac := NewMatcher()
+	ac := ahocorasick.NewMatcher()
 
 	dictionary := []string{"hello", "world", "привет", "golang", "c++", "love", "not love"}
 
@@ -58,7 +59,7 @@ func TestIntern(t *testing.T) {
 }
 
 func TestFile(t *testing.T) {
-	ac := NewMatcher()
+	ac := ahocorasick.NewMatcher()
 
 	dictionary := []string{"hello", "world", "привет", "golang", "c++", "love", "not love"}
 
@@ -77,7 +78,7 @@ func TestFile(t *testing.T) {
 }
 
 func TestFullCover(t *testing.T) {
-	ac := NewMatcher()
+	ac := ahocorasick.NewMatcher()
 
 	dictionary := []string{"she", "he", "say", "shr", "her"}
 	ac.Build(dictionary)

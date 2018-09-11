@@ -10,7 +10,9 @@
 </head>
 <body>
 
-<form action="/calc" method="POST">
+<div class="container">
+
+<form>
     <div class="form-group">
         <label>Строка</label>
         <input type="text" class="form-control" id="str" >
@@ -20,22 +22,31 @@
         <input type="text" class="form-control" id="substr" placeholder="Через запятую">
     </div>
 
-    <button type="submit" class="btn btn-primary" disabled id="butn">Вычислить</button>
+    <button class="btn btn-primary" disabled id="butn">Вычислить</button>
+    <button type="reset" class="btn btn-danger" onclick="$butn.disabled = true;">Очистить</button>
 </form>
 
 
 <h2>Результат:</h2>
 
-<ul>
-    <li>Lorem ipsum dolor sit amet</li>
-</ul>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Подстрока</th>
+        <th scope="col">Нашли?</th>
+    </tr>
+    </thead>
+
+    <tbody id="table"></tbody>
+</table>
+
+</div>
 
 <script>
     const $str = document.querySelector("#str");
     const $substr = document.querySelector("#substr");
-    const $res = document.querySelector("#res");
+    const $table = document.querySelector("#table");
     const $butn = document.querySelector("#butn");
-
 
     const inp = [$str, $substr];
 
@@ -55,7 +66,30 @@
         el.oninput = onButton;
     })
 
-    
+
+    $butn.onclick = e => {
+        event.preventDefault();
+        const str = $str.value;
+        const substr = $substr.value;
+
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', "/calc", true);
+        xhr.send(JSON.stringify({str, substr}));
+
+        xhr.onload = function() {
+            $table.innerHTML = '';
+            const data = JSON.parse(this.responseText);
+            for(const key in data) {
+                $table.insertAdjacentHTML('beforeend', `
+                    <tr>
+                        <th>${key}</th>
+                        <td>${data[key]}</td>
+                    </tr>`);
+            }
+        }
+    };
+
 
 </script>
 
