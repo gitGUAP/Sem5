@@ -1,69 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/9 вар.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab1/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab1/ЛР1.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/.idea/ahocorasick.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/ahocorasick.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/ahocorasick_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/cover.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/coverage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ahocorasick/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab2/ЛР2.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/.idea/ahocorasick.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/ahocorasick.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/ahocorasick_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/cover.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/coverage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ahocorasick/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab3/ЛР3.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/.idea/ahocorasick.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/ahocorasick/ahocorasick.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/ahocorasick/ahocorasick_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/ahocorasick/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/cover.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/coverage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ahocorasick/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab4/ЛР4.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/.idea/ahocorasick.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/ahocorasick.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/ahocorasick_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/cover.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/coverage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ahocorasick/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab5/ЛР5.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab6/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab7/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/lab8/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Quality Management Software/Метод_лр_УКПО.pdf" beforeDir="false" />
-    </list>
+    <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
