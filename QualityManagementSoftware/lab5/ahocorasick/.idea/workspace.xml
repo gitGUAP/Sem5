@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ahocorasick.go" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick/ahocorasick.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ahocorasick_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick/ahocorasick_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/~$5.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/ЛР5.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/ЛР5.Управление качеством программного обеспечения. Гришин С.А..docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/.idea/ahocorasick.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/ahocorasick.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/ahocorasick_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/cover.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/coverage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab5/ЛР5.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +103,7 @@
     <session id="398082864">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -201,7 +204,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+              <caret line="25" selection-start-line="25" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -428,14 +431,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26040268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35893854" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35893854" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -556,7 +558,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+          <caret line="25" selection-start-line="25" selection-end-line="26" />
         </state>
       </provider>
     </entry>

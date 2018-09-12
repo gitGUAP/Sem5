@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form>
+            <div class="form-group">
+                <label>Строка</label>
+                <input type="text" class="form-control" id="str" name="str">
+            </div>
+            <div class="form-group">
+                <label>Подстроки</label>
+                <input type="text" class="form-control" id="substr" name="substr" placeholder="Через запятую">
+            </div>
+
+            <button class="btn btn-primary" disabled id="butn">Вычислить</button>
+            <button type="reset" class="btn btn-danger" onclick="$butn.disabled = true;">Очистить</button>
+        </form>
+
+
+        <h2>Результат:</h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Подстрока</th>
+                    <th scope="col">Нашли?</th>
+                </tr>
+            </thead>
+
+            <tbody id="table"></tbody>
+        </table>
+
+    </div>
+
+    <!-- <script>
+        const $str = document.querySelector("#str");
+        const $substr = document.querySelector("#substr");
+        const $table = document.querySelector("#table");
+        const $butn = document.querySelector("#butn");
+
+        const inp = [$str, $substr];
+
+        const onButton = () => {
+            const isNotEmpty = inp.every((el) =>
+                el.value.length !== 0
+            )
+
+            if (!isNotEmpty) {
+                $butn.disabled = true;
+            } else {
+                $butn.disabled = false;
+            }
+        }
+
+        inp.map(el => {
+            el.oninput = onButton;
+        })
+
+
+        $butn.onclick = e => {
+            event.preventDefault();
+            const str = $str.value;
+            const substr = $substr.value;
+
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', "/calc", true);
+            xhr.send(JSON.stringify({ str, substr }));
+
+            xhr.onload = function () {
+                $table.innerHTML = '';
+                const data = JSON.parse(this.responseText);
+                for (const key in data) {
+                    $table.insertAdjacentHTML('beforeend', `
+                    <tr>
+                        <th>${key}</th>
+                        <td>${data[key]}</td>
+                    </tr>`);
+                }
+            }
+        };
+    </script> -->
+
+    <script>
+        "use strict";
+
+        var $str = document.querySelector("#str");
+        var $substr = document.querySelector("#substr");
+        var $table = document.querySelector("#table");
+        var $butn = document.querySelector("#butn");
+
+        var inp = [$str, $substr];
+
+        var onButton = function onButton() {
+            var isNotEmpty = inp.every(function (el) {
+                return el.value.length !== 0;
+            });
+
+            if (!isNotEmpty) {
+                $butn.disabled = true;
+            } else {
+                $butn.disabled = false;
+            }
+        };
+
+        inp.map(function (el) {
+            el.oninput = onButton;
+        });
+
+        $butn.onclick = function (e) {
+            event.preventDefault();
+            var str = $str.value;
+            var substr = $substr.value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', "/calc", true);
+            xhr.send(JSON.stringify({ str: str, substr: substr }));
+
+            xhr.onload = function () {
+                $table.innerHTML = '';
+                var data = JSON.parse(this.responseText);
+                for (var key in data) {
+                    $table.insertAdjacentHTML('beforeend', "\n                    <tr>\n                        <th>" + key + "</th>\n                        <td>" + data[key] + "</td>\n                    </tr>");
+                }
+            };
+        };
+    </script>
+</body>
+
+</html>

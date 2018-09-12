@@ -45,7 +45,6 @@ func (m *Matcher) Build(dictionary []string) {
 	m.mark = make([]bool, m.size)
 }
 
-
 // return all strings matched as indexes into the original dictionary
 func (m *Matcher) Match(s string) []int {
 	curNode := m.root
