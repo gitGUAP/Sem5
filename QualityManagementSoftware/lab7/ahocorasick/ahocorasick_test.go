@@ -2,6 +2,8 @@ package ahocorasick
 
 import (
 	"math/rand"
+	"strconv"
+	"strings"
 	"testing"
 )
 
@@ -16,6 +18,27 @@ func init() {
 	}
 
 	str = randWord(5000, 10000)
+}
+
+func TestHard(t *testing.T) {
+	ac := NewMatcher()
+
+	// Create list of number
+	dictionary := make([]string, 10e5)
+	for i := range dictionary {
+		dictionary[i] = strconv.Itoa(i)
+	}
+
+	ac.Build(dictionary)
+
+	// Concat dictionary
+	match := strings.Join(dictionary, "")
+
+	l := ac.MatchSize(match)
+
+	if l != len(dictionary) {
+		t.Errorf("Length not match: %d and %d", l, len(dictionary))
+	}
 }
 
 func BenchmarkOfw(b *testing.B) {

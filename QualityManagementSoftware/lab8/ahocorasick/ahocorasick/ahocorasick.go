@@ -10,7 +10,7 @@ import (
 type trieNode struct {
 	count int
 	fail  *trieNode
-	child  [256]*trieNode
+	child map[rune]*trieNode
 	index int
 }
 
@@ -18,7 +18,7 @@ func newTrieNode() *trieNode {
 	return &trieNode{
 		count: 0,
 		fail:  nil,
-		child: [256]*trieNode{},
+		child: make(map[rune]*trieNode),
 		index: -1,
 	}
 }
@@ -38,19 +38,20 @@ func NewMatcher() *Matcher {
 }
 
 func (m *Matcher) Build(dictionary []string) {
-	for i := range dictionary {
-		m.insert(dictionary[i])
+	for _, val := range dictionary {
+		m.insert(val)
 	}
 	m.build()
+	m.mark = make([]bool, m.size)
 }
 
+// return all strings matched as indexes into the original dictionary
 func (m *Matcher) Match(s string) []int {
 	curNode := m.root
-	mark := make([]bool, m.size)
-
+	m.resetMark()
 	var p *trieNode = nil
 
-	ret := make([]int, 0, m.size)
+	ret := make([]int, 0)
 
 	for _, v := range s {
 		for curNode.child[v] == nil && curNode != m.root {
@@ -62,12 +63,10 @@ func (m *Matcher) Match(s string) []int {
 		}
 
 		p = curNode
-		for p != m.root {
-			if p.count > 0 && !mark[p.index] {
-				mark[p.index] = true
-				for i := 0; i < p.count; i++ {
-					ret = append(ret, p.index)
-				}
+		for p != m.root && p.count > 0 && !m.mark[p.index] {
+			m.mark[p.index] = true
+			for i := 0; i < p.count; i++ {
+				ret = append(ret, p.index)
 			}
 			p = p.fail
 		}
@@ -76,8 +75,33 @@ func (m *Matcher) Match(s string) []int {
 	return ret
 }
 
+// just return the number of len(Match(s))
 func (m *Matcher) MatchSize(s string) int {
-	return len(m.Match(s))
+
+	curNode := m.root
+	m.resetMark()
+	var p *trieNode = nil
+
+	num := 0
+
+	for _, v := range s {
+		for curNode.child[v] == nil && curNode != m.root {
+			curNode = curNode.fail
+		}
+		curNode = curNode.child[v]
+		if curNode == nil {
+			curNode = m.root
+		}
+
+		p = curNode
+		for p != m.root && p.count > 0 && !m.mark[p.index] {
+			m.mark[p.index] = true
+			num += p.count
+			p = p.fail
+		}
+	}
+
+	return num
 }
 
 func (m *Matcher) build() {
@@ -88,10 +112,6 @@ func (m *Matcher) build() {
 		var p *trieNode = nil
 
 		for i, v := range temp.child {
-			if v == nil {
-				continue
-			}
-
 			if temp == m.root {
 				v.fail = m.root
 			} else {
@@ -123,4 +143,10 @@ func (m *Matcher) insert(s string) {
 	curNode.count++
 	curNode.index = m.size
 	m.size++
+}
+
+func (m *Matcher) resetMark() {
+	for i := 0; i < m.size; i++ {
+		m.mark[i] = false
+	}
 }
