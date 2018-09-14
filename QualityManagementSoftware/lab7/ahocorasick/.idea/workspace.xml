@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ahocorasick.go" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ahocorasick_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ahocorasick_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/ahocorasick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/ahocorasick/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab6/ЛР6.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab6/ЛР6.Управление качеством программного обеспечения. Гришин С.А..docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ЛР6.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,9 +94,10 @@
     <session id="-1104037546">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -122,14 +124,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ahocorasick.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="e#109#144#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -148,7 +147,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -160,7 +159,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Go/src/testing/testing.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
+            <state relative-caret-position="13175">
               <caret line="791" selection-start-line="791" selection-end-line="791" />
             </state>
           </provider>
@@ -374,7 +373,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26040268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2637584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -450,30 +449,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../lab2/ahocorasick/ahocorasick.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://C:/Go/src/testing/testing.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
+        <state relative-caret-position="13175">
           <caret line="791" selection-start-line="791" selection-end-line="791" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ahocorasick.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#109#144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../../lab2/ahocorasick/ahocorasick.go">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ahocorasick_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ahocorasick.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
