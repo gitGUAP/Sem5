@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../lab1/ЛР1.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1/ЛР1.Управление качеством программного обеспечения. Гришин С.А..docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab2/ahocorasick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/ahocorasick/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab2/ЛР2.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/ЛР2.Управление качеством программного обеспечения. Гришин С.А..docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab3/ЛР3.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab3/ЛР3.Управление качеством программного обеспечения. Гришин С.А..docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ЛР6.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" afterPath="$PROJECT_DIR$/../ЛР6.Управление качеством программного обеспечения. Гришин С.А..docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab7/ЛР6.Управление качеством программного обеспечения. Гришин С.А..docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab7/ahocorasick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab7/ahocorasick/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab8/ahocorasick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab8/ahocorasick/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab8/ahocorasick/ahocorasick/ahocorasick_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab8/ahocorasick/ahocorasick/ahocorasick_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,10 +137,12 @@
     <session id="2144813052">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -250,10 +257,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="935" />
-    <option name="y" value="-30" />
-    <option name="width" value="979" />
-    <option name="height" value="1050" />
+    <option name="x" value="50" />
+    <option name="y" value="-25" />
+    <option name="width" value="1750" />
+    <option name="height" value="985" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -261,7 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,13 +284,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lab7/ahocorasick" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -423,9 +430,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15704697" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16107382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -529,15 +535,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../lab2/ahocorasick/ahocorasick.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../lab2/ahocorasick/ahocorasick.go">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">

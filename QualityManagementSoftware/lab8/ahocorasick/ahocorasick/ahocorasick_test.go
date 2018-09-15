@@ -61,7 +61,8 @@ func TestIntern(t *testing.T) {
 func TestFile(t *testing.T) {
 	ac := ahocorasick.NewMatcher()
 
-	dictionary := []string{"hello", "world", "привет", "golang", "c++", "love", "not love"}
+	//dictionary := []string{"hello", "world", "привет", "golang", "c++", "love", "not love"}
+	dictionary := []string{"golang", "c++", "love", "not love"}
 
 	ac.Build(dictionary)
 
