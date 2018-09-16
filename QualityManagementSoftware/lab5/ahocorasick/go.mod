@@ -7,8 +7,9 @@ require (
 	github.com/gin-contrib/sse v0.0.0-20170109093832-22d885f9ecc7 // indirect
 	github.com/gin-gonic/gin v1.3.0
 	github.com/golang/protobuf v1.2.0 // indirect
+	github.com/gotk3/gotk3 v0.0.0-20180905040958-020531a77b59 // indirect
 	github.com/json-iterator/go v1.1.5 // indirect
-	github.com/lxn/walk v0.0.0-20180827160941-c4fcb8f984c9 // indirect
+	github.com/lxn/walk v0.0.0-20180827160941-c4fcb8f984c9
 	github.com/lxn/win v0.0.0-20180821075459-785c49560692 // indirect
 	github.com/mattn/go-gtk v0.0.0-20180910144212-ab259656e6a4 // indirect
 	github.com/mattn/go-isatty v0.0.4 // indirect
