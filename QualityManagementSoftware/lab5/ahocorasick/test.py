@@ -1,7 +1,16 @@
-from pywinauto import Desktop, Application
+import pyautogui, clipboard
 
-Application().start("D:\\project\\Sem5\\QualityManagementSoftware\\lab5\\ahocorasick\\ahocorasick.exe")
+pyautogui.moveTo(100, 150)
+pyautogui.click()
+pyautogui.typewrite('Hello world!', interval=0.05)  # type with quarter-second pause in between each key
+pyautogui.press('tab')
+pyautogui.typewrite('Hello,wolf,test', interval=0.05)  # type with quarter-second pause in between each key
+pyautogui.press('tab')
+pyautogui.press('tab')
+pyautogui.press('enter')
+pyautogui.hotkey('shift','tab')
+pyautogui.hotkey('ctrl','a')
+pyautogui.hotkey('ctrl','c')
 
-# connect to another process spawned by explorer.exe
-# Note: make sure the script is running as Administrator!
-app = Application(backend="uia").connect(path="ahocorasick.exe", title="Aho")
+text = clipboard.paste() 
+print(text.strip() == "Hello")

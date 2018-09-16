@@ -12,14 +12,22 @@ const { Builder, By, Key } = require("selenium-webdriver");
 //   ;
 // }
 
+function timeout(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
 (async function example() {
   let driver = await new Builder().forBrowser("chrome").build();
   try {
     await driver.get("http://localhost:8080/");
     await driver.findElement(By.name("str")).sendKeys("webdriver");
+    await timeout(3000)
     await driver
       .findElement(By.name("substr"))
       .sendKeys("web,dr,ver,test", Key.RETURN);
+
+      await timeout(3000)
 
     const res = await driver.findElement(By.id("table")).getText();
     const exp = `dr true
