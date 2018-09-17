@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03125267-5e06-418a-b03a-b72f023a40bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/a.au3" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/a.au3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/ahocorasick/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/ahocorasick.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/ahocorasick/ahocorasick.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/ahocorasick/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab5/ahocorasick/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab5/ahocorasick/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab8/ahocorasick/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab8/ahocorasick/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../lab8/ahocorasick/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab8/ahocorasick/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,8 +130,10 @@
     <session id="-877683437">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -264,7 +259,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,6 +275,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -426,14 +421,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2637584" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26778522" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35893854" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35893854" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39944133" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
