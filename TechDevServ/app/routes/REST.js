@@ -24,9 +24,14 @@ router.post("/login", function(req, res, next) {
       return res.redirect("/");
     }
 
-    res.cookie("token", "secret", { maxAge: 360000 });
+    res.cookie("token", "secret", { maxAge: 900000 });
     return res.redirect("/");
   });
+});
+
+router.post("/logout", function(req, res, next) {
+  res.clearCookie("token");
+  return res.redirect("/");
 });
 
 module.exports = router;

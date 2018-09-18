@@ -1,26 +1,6 @@
-extends layout
+extends layoutNav
 
 block content
-  nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
-    a.navbar-brand(href='#') Grishy
-    
-    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarColor02', aria-controls='navbarColor02', aria-expanded='false', aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-
-    #navbarColor02.collapse.navbar-collapse
-      ul.navbar-nav.mr-auto
-        li.nav-item.active
-          a.nav-link(href='#')
-            | Home 
-            span.sr-only (current)
-        li.nav-item
-          a.nav-link(href='#') Features
-        li.nav-item
-          a.nav-link(href='#') Pricing
-
-      form.form-inline
-        a.btn.btn-outline-light.my-2.my-sm-0(href='/login') Log in
-
   .container.g-cont
     .list-group.g-list
   

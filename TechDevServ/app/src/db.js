@@ -3,7 +3,7 @@ mongoose.connect("mongodb://localhost/test");
 
 const Item = mongoose.model("Item", {
   name: String,
-  count: Number,
+  amount: Number,
   img: String,
   desc: String,
   price: Number
