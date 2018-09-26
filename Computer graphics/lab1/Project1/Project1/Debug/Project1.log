@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\moonman\documents\github\sem5\computer graphics\lab1\project1\project1\source.cpp(22): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\moonman\documents\github\sem5\computer graphics\lab1\project1\project1\source.cpp(58): warning C4305: '+=': truncation from 'double' to 'GLfloat'
+  Project1.vcxproj -> C:\Users\Moonman\Documents\GitHub\Sem5\Computer graphics\lab1\Project1\Debug\Project1.exe
