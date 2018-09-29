@@ -89,3 +89,40 @@ func TestFullCover(t *testing.T) {
 		t.Fatal()
 	}
 }
+
+
+func TestEmpty(t *testing.T) {
+	ac := ahocorasick.NewMatcher()
+
+	dictionary := []string{"she", "he", "say", "shr", "her"}
+	ac.Build(dictionary)
+
+	ret := ac.Match("")
+	if len(ret) != 0 {
+		t.Fatal()
+	}
+}
+
+func TestEmpty2(t *testing.T) {
+	ac := ahocorasick.NewMatcher()
+
+	dictionary := []string{}
+	ac.Build(dictionary)
+
+	ret := ac.Match("")
+	if len(ret) != 0 {
+		t.Fatal()
+	}
+}
+
+func TestEmpty3(t *testing.T) {
+	ac := ahocorasick.NewMatcher()
+
+	dictionary := []string{}
+	ac.Build(dictionary)
+
+	ret := ac.Match("ooili")
+	if len(ret) != 0 {
+		t.Fatal()
+	}
+}

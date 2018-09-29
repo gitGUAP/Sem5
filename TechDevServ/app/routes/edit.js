@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
-router.get('/delete/:id', function(req, res, next) {
+router.delete('/delete/:id', function(req, res, next) {
   const login = req.cookies.token === 'secret' ? true : false;
   if (!login) {
     return res.redirect('/');
@@ -27,8 +27,8 @@ router.get('/delete/:id', function(req, res, next) {
     if (err) {
       return next(err);
     }
-
-    return res.redirect('/edit');
+    
+    res.send(200)  
   });
 });
 

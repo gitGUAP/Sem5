@@ -31,7 +31,7 @@ void torus(int numc, int numt) {
 static void init(void) {
   theTorus = glGenLists(1);
   glNewList(theTorus, GL_COMPILE);
-  torus(10, 20);
+  torus(30, 40);
   glEndList();
 
   glShadeModel(GL_SMOOTH);
@@ -41,7 +41,7 @@ static void init(void) {
 void display(void) {
   glClear(GL_COLOR_BUFFER_BIT);
   glColor3f(1.0, 1.0, 1.0);
-  glRotatef(30., 1.0, 1.0, 0.0);
+  glRotatef(30.0, 1.0, 1.0, 0.0);
   glCallList(theTorus);
   glFlush();
 }

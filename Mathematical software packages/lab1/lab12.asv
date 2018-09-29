@@ -1,0 +1,27 @@
+% 2.1
+subplot(3,1,1);
+fplot(@(x) 3.*x.^4 + 4.*x.^3 - 12.*x.^2 + 1, [-3 3], 'b--');
+hold on;
+fplot(@(x) 0, [-3, 3], 'b--+');
+hold on;
+title('$3x^4 + 4x^3 - 12x^2 + 1 = 0$','Color', 'm');
+plot(-2.76, 0,'ro', -0.27,0, 'ro', 0.3,0, 'ro', 1.4, 0,'ro');
+grid on;
+
+% 2.2
+subplot (3,1,2);
+fplot(@(x) 5.^x, [-2, 2], 'r-');
+hold on;
+fplot(@(x) 6.*x + 3, [-2, 2]);
+hold on;
+title('$5^x = 6x + 3$','Color', 'r');
+plot(-0.4144, 0.5136,'ro', 1.5633, 12.3798, 'ro');
+grid on;
+
+% 2.3
+subplot (3,1,3);
+fimplicit(@(x, y) sin(x - y) - x .* y + 1, 'ko');
+title('$sin(x-y)-x*y+1 = 0; x^2+y^2 = 0.75$');
+hold on;
+fimplicit(@(x, y) x.^2 + y.^2 - 0.75, 'g-');
+grid on;
