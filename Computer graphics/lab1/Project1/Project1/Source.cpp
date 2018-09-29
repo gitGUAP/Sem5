@@ -1,83 +1,60 @@
-#include <GL\glut.h>
+#include <GL/glut.h>
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-GLfloat xRotated, yRotated, zRotated;
-// Torus
-GLdouble innerRaidus = 0.5;
-GLdouble outterRaidus = 1;
-GLint sides = 50;
-GLint rings = 50;
+const double PI_ = 3.141592653589793238463;
+GLuint theTorus;
 
-void displayTorus(void) {
+void torus(int numc, int numt) {
+  int i, j, k;
+  double s, t, x, y, z, twopi;
 
-  glMatrixMode(GL_MODELVIEW);
-  // clear the drawing buffer.
+  twopi = 2 * PI_;
+  for (i = 0; i < numc; i++) {
+    glBegin(GL_LINE_STRIP);
+    for (j = 0; j <= numt; j++) {
+      for (k = 1; k >= 0; k--) {
+        s = (i + k) % numc + 0.5;
+        t = j % numt;
+
+        x = (1 + 0.1 * cos(s * twopi / numc)) * cos(t * twopi / numt);
+        y = (1 + 0.1 * cos(s * twopi / numc)) * sin(t * twopi / numt);
+        z = 0.1 * sin(s * twopi / numc);
+        glVertex3f(x, y, z);
+      }
+    }
+    glEnd();
+  }
+}
+
+static void init(void) {
+  theTorus = glGenLists(1);
+  glNewList(theTorus, GL_COMPILE);
+  torus(10, 20);
+  glEndList();
+
+  glShadeModel(GL_SMOOTH);
+  glClearColor(0.0, 0.0, 0.0, 0.0);
+}
+
+void display(void) {
   glClear(GL_COLOR_BUFFER_BIT);
-  // clear the identity matrix.
-  glLoadIdentity();
-  // traslate the draw by z = -4.0
-  // Note this when you decrease z like -8.0 the drawing will looks far , or
-  // smaller.
-  glTranslatef(0.0, 0.0, -4.5);
-  // Red color used to draw.
-  glColor3f(0.8, 0.2, 0.1);
-  // changing in transformation matrix.
-  // rotation about X axis
-  glRotatef(xRotated, 1.0, 0.0, 0.0);
-  // rotation about Y axis
-  glRotatef(yRotated, 0.0, 1.0, 0.0);
-  // rotation about Z axis
-  glRotatef(zRotated, 0.0, 0.0, 1.0);
-  // scaling transfomation
-  glScalef(1.0, 1.0, 1.0);
-  // built-in (glut library) function , draw you a Torus.
-
-  glutSolidTorus(innerRaidus, outterRaidus, sides, rings);
-  // Flush buffers to screen
-
+  glColor3f(1.0, 1.0, 1.0);
+  glRotatef(30., 1.0, 1.0, 0.0);
+  glCallList(theTorus);
   glFlush();
-  // sawp buffers called because we are using double buffering
-  // glutSwapBuffers();
-}
-
-void reshapeTorus(int x, int y) {
-  if (y == 0 || x == 0)
-    return; // Nothing is visible then, so return
-  // Set a new projection matrix
-  glMatrixMode(GL_PROJECTION);
-  glLoadIdentity();
-  // Angle of view:40 degrees
-  // Near clipping plane distance: 0.5
-  // Far clipping plane distance: 20.0
-
-  gluPerspective(40.0, (GLdouble)x / (GLdouble)y, 0.5, 20.0);
-
-  glViewport(0, 0, x, y); // Use the whole window for rendering
-}
-
-void idleTorus(void) {
-  yRotated += 0.01;
-  displayTorus();
 }
 
 int main(int argc, char **argv) {
-  // Initialize GLUT
+  glutInitWindowSize(500, 500);
   glutInit(&argc, argv);
-  // double buffering used to avoid flickering problem in animation
+
   glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-  // window size
-  glutInitWindowSize(400, 350);
-  // create the window
-  glutCreateWindow("Torus Rotating Animation");
-  glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-  xRotated = yRotated = zRotated = 30.0;
-  xRotated = 33;
-  yRotated = 40;
-  glClearColor(0.0, 0.0, 0.0, 0.0);
-  // Assign  the function used in events
-  glutDisplayFunc(displayTorus);
-  glutReshapeFunc(reshapeTorus);
-  glutIdleFunc(idleTorus);
-  // Let start glut loop
+  glutCreateWindow("Lab1");
+  init();
+
+  glutDisplayFunc(display);
   glutMainLoop();
   return 0;
 }
