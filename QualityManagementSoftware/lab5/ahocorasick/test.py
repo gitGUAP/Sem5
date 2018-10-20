@@ -13,4 +13,4 @@ pyautogui.hotkey('ctrl','a')
 pyautogui.hotkey('ctrl','c')
 
 text = clipboard.paste() 
-print(text.strip() == "Hello")
+print(text.strip() == "Helkjhlo")
