@@ -16,6 +16,8 @@ router.get("/records", function(req, res, next) {
 router.post("/login", function(req, res, next) {
     const userData = {...req.body };
 
+    res.cookie("lang", "ru", { maxAge: 900000 });
+
     res.cookie("token", "secret", { maxAge: 900000 });
     return res.redirect("/");
 });
