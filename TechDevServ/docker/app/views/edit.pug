@@ -1,0 +1,27 @@
+extends layoutNav
+
+block content
+  .container.g-cont
+    table.table
+      thead.thead-light
+        tr
+          th(scope='col') #
+          th(scope='col') Name
+          th(scope='col') Amount
+          th(scope='col') Price
+          th(scope='col') Action
+      tbody
+        each el in data
+          tr
+            th(scope='row')= el._id
+            td= el.name
+            td= el.amount
+            td= el.price
+            td
+              .btn-group(role='group')
+                a(href=`/edit/item/${el._id}`): button.btn.btn-light(type='button') 🖊
+                a(onClick=`del("${el._id}")`): button.btn.btn-dark(type='button' style="float:right") ❌
+
+      
+
+  script(src="/javascripts/edit.js")

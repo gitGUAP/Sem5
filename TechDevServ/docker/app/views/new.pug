@@ -1,0 +1,33 @@
+extends layoutNav
+
+block content
+  .container.g-cont
+    - url = _id? "update/" + _id: ""
+    form(action="/new/" + url method="post" encType="multipart/form-data")
+      .form-group
+        label(for='inputName') Name
+        input#inputName.form-control(type='text', placeholder='Name' name="name" value=name)
+     
+      .form-group
+        label(for='inputDesc') Description
+        textarea#inputDesc.form-control(rows="5", type='text', placeholder='Its about...' name="desc")=desc
+    
+      .form-row
+        .form-group.col-md-4
+          label(for='inputAmount') Amount
+          input#inputAmount.form-control(type='number', placeholder='15' name="amount" value=amount)
+        .form-group.col-md-4
+          label(for='inputPrice') Price
+          .input-group.mb-2
+            .input-group-prepend
+              .input-group-text $
+            input#inputPrice.form-control(type='number', placeholder='100' name="price" value=price)
+        .form-group.col-md-4
+          label(for='inputFile') Image
+          input#inputFile.form-control-file(type='file' name="img")
+
+      .g-new_add
+        button.btn.btn-success.btn-lg(type='submit') Add
+
+
+  script(src="/javascripts/new.js")

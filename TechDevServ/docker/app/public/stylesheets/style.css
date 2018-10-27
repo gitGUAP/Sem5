@@ -1,0 +1,24 @@
+.g-cont {
+  margin-top: 1rem;
+}
+
+.g-new_add {
+  text-align: center;
+}
+
+.g-index_img {
+  width: 100%;
+  height: 20rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.card {
+  width: 30% !important;
+  margin: 1%;
+}
+
+.g-list {
+  display: flex;
+  flex-wrap: wrap;
+}
