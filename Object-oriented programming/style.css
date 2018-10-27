@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+
+body {
+    background-image: url("./img/bg.jpg");
+    background-repeat: repeat;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    background-color: #fff;
+    width: 95vh;
+    height: 95vh;
+
+    padding: 0.5%;
+    border-radius: 2%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+
+    /* background-color: #f0f; */
+    justify-content: space-between;
+    height: 10%;
+}
+
+header a {
+    right: 0;
+    margin-left: 10px;
+}
+
+main {
+    /* background-color: aquamarine; */
+    height: 90%;
+}
