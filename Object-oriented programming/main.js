@@ -1,10 +1,21 @@
+const imgs = [
+    "p-b_l.png",
+    "p-b_r.png",
+    "p-horizontally.png",
+    "p-l.png",
+    "p-t-l.png",
+    "p-t-r.png",
+    "p-vertically.png",
+]
+
+function infoByImg(path) {
+    return {
+        
+    }
+}
+
 window.onload  = function name(params) {
     const cells = document.querySelectorAll(".cell")
-    const imgs = [
-        "p-d.png",
-        "p-l.png",
-        "p-r.png",
-    ]
 
     for (const el of cells) {
         el.style.backgroundImage = `url('./img/${imgs[Math.floor(Math.random()*imgs.length)]}')`;
@@ -15,15 +26,13 @@ window.onload  = function name(params) {
 
 function startWater(start) {
     console.log("Stat water");
-    
     let t = setInterval(() => {
+        document.querySelector(".timer").innerHTML = start + "s";
         start -= 1;
 
-        document.querySelector(".timer").innerHTML = start + "s";
-
-        if (start < 0 ) {
+        if (start <= 0 ) {
             clearInterval(t);
-            console.log("WATER");
+            alert("WATER");
         }
     },1000)
 }
