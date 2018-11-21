@@ -9,8 +9,30 @@ const imgs = [
 let click = 0;
 const maxHUE = 100;
 
-function infoByImg(path) {
-    return path.split("/").pop().split(".")[0].split("-")[1].split("_");
+function infoByImg(x, y, path) {
+    if (!path || path.length == 0) {
+        return []
+    }
+    const direct = path.split("/").pop().split(".")[0].split("-")[1].split("_")
+
+    const where = direct.map((val, inx) => {
+        if (inx == 0 && val != 0) {
+            return { x: x - 1, y: y }
+        }
+        if (inx == 1 && val != 0) {
+            return { x: x, y: y + 1 }
+        }
+        if (inx == 2 && val != 0) {
+            return { x: x + 1, y: y }
+        }
+        if (inx == 3 && val != 0) {
+            return { x: x, y: y - 1 }
+        }
+        return false;
+    })
+
+
+    return where.filter(el => el)
 }
 
 Object.defineProperty(Array.prototype, 'chunk_inefficient', {
@@ -39,7 +61,7 @@ function select(event) {
     next.src = `./img/${imgs[Math.floor(Math.random() * imgs.length)]}`
     click++;
 
-    event.toElement.style.backgroundImage = `url('./img/${next_img}')`;
+    event.toElement.src = `./img/${next_img}`;
 }
 
 window.onload = function name(params) {
@@ -49,7 +71,7 @@ window.onload = function name(params) {
     for (const el of cells) {
         el.addEventListener("click", select);
     }
-    startTimer(5);
+    startTimer(25);
 }
 
 function startTimer(start) {
@@ -67,20 +89,36 @@ function startTimer(start) {
 
 
 function startWater() {
-    let t = setInterval(() => {
+    setInterval(() => {
         addWater(0, 0)
     }, 200)
+
+    setTimeout(function () {
+        const end = getMap()[5][6]
+        if (addHUE(end, 0) > 0) {
+            alert(`Вы выиграли! Счет: ${1000 - click}`)
+        } else {
+            alert(`ПРОИГРАЛИ! Счет: ${1000 - click}`)
+        }
+    }, 500)
 }
 
 function addWater(x, y) {
     const el = getMap()[x][y]
-    console.log(el.style.backgroundImage);
 
-    if (addHUE(el, 5) >= maxHUE) {
-        console.log(infoByImg(el.style.backgroundImage));
+    if (addHUE(el, 10) >= maxHUE) {
+        return;
     }
 
-    return false;
+    let next = infoByImg(x, y, el.src).filter(el => {
+        const nextEl = getMap()[el.x][el.y]
+        const isConnect = infoByImg(el.x, el.y, nextEl.src).some(i => i.x == x && i.y == y)
+        return isConnect
+    })
+
+    for (const iter of next) {
+        addWater(iter.x, iter.y)
+    }
 }
 
 function addHUE(el, inc) {

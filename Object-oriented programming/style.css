@@ -50,7 +50,6 @@ main {
     border: 1px solid #cccccc;
     transition: 0.25s;
     background-size: contain;
-    background-image: url("./img/p-0_1_0_0.png");
 }
 
 .cell_end {
@@ -59,7 +58,6 @@ main {
     border: 1px solid #cccccc;
     transition: 0.25s;
     background-size: contain;
-    background-image: url("./img/p-0_0_0_1.png");
 }
 
 .cell {
