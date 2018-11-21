@@ -96,9 +96,9 @@ function startWater() {
     setTimeout(function () {
         const end = getMap()[5][6]
         if (addHUE(end, 0) > 0) {
-            alert(`Вы выиграли! Счет: ${1000 - click}`)
+            alert(`Вы выиграли! Счет: ${1000 - click * 10}`)
         } else {
-            alert(`ПРОИГРАЛИ! Счет: ${1000 - click}`)
+            alert(`ПРОИГРАЛИ! Счет: ${1000 - click * 10}`)
         }
     }, 500)
 }
