@@ -7,7 +7,9 @@ const imgs = [
     "p-1_1_0_0.png",
 ]
 let click = 0;
+let score = 0;
 const maxHUE = 100;
+
 function infoByImg(x, y, path) {
     if (!path || path.length == 0) {
         return []
@@ -15,27 +17,38 @@ function infoByImg(x, y, path) {
     const direct = path.split("/").pop().split(".")[0].split("-")[1].split("_")
     const where = direct.map((val, inx) => {
         if (inx == 0 && val != 0) {
-            return { x: x - 1, y: y }
+            return {
+                x: x - 1,
+                y: y
+            }
         }
         if (inx == 1 && val != 0) {
-            return { x: x, y: y + 1 }
+            return {
+                x: x,
+                y: y + 1
+            }
         }
         if (inx == 2 && val != 0) {
-            return { x: x + 1, y: y }
+            return {
+                x: x + 1,
+                y: y
+            }
         }
         if (inx == 3 && val != 0) {
-            return { x: x, y: y - 1 }
+            return {
+                x: x,
+                y: y - 1
+            }
         }
         return false;
     })
     return where.filter(el => el)
 }
-
 Object.defineProperty(Array.prototype, 'chunk_inefficient', {
-    value: function (chunkSize) {
+    value: function(chunkSize) {
         var array = this;
         return [].concat.apply([],
-            array.map(function (elem, i) {
+            array.map(function(elem, i) {
                 return i % chunkSize ? [] : [array.slice(i, i + chunkSize)];
             })
         );
@@ -54,22 +67,24 @@ function select(event) {
     const next = document.querySelector(".next-cell");
     const next_img = next.src.split("/").pop();
     next.src = `./img/${imgs[Math.floor(Math.random() * imgs.length)]}`
-    click++;
     event.toElement.src = `./img/${next_img}`;
+    score += 5;
 }
-
 window.onload = function name(params) {
     getMap()
     const cells = document.querySelectorAll(".cell")
     for (const el of cells) {
         el.addEventListener("click", select);
     }
+    document.querySelector("#start").addEventListener("click", startWater);
     startTimer(25);
+    updateScore()
 }
 
 function startTimer(start) {
     let t = setInterval(() => {
         document.querySelector(".timer").innerHTML = start + "s";
+        score += 5;
         if (start <= 0) {
             clearInterval(t);
             startWater()
@@ -78,17 +93,23 @@ function startTimer(start) {
     }, 1000)
 }
 
+function updateScore() {
+    setInterval(() => {
+        const el = document.querySelector("#score")
+        el.innerHTML = `Очки: ${score}`
+    }, 100)
+}
 
 function startWater() {
     setInterval(() => {
         addWater(0, 0)
     }, 200)
-    setTimeout(function () {
+    setTimeout(function() {
         const end = getMap()[5][6]
         if (addHUE(end, 0) > 0) {
-            alert(`Вы выиграли! Счет: ${1000 - click * 10}`)
+            alert(`Вы выиграли! Счет: ${score}`)
         } else {
-            alert(`ПРОИГРАЛИ! Счет: ${1000 - click * 10}`)
+            alert(`ПРОИГРАЛИ! Счет: ${score}`)
         }
     }, 500)
 }
