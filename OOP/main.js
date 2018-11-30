@@ -77,7 +77,7 @@ window.onload = function name(params) {
         el.addEventListener("click", select);
     }
     document.querySelector("#start").addEventListener("click", startWater);
-    startTimer(25);
+    startTimer(35);
     updateScore()
 }
 
