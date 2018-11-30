@@ -8,13 +8,11 @@ const imgs = [
 ]
 let click = 0;
 const maxHUE = 100;
-
 function infoByImg(x, y, path) {
     if (!path || path.length == 0) {
         return []
     }
     const direct = path.split("/").pop().split(".")[0].split("-")[1].split("_")
-
     const where = direct.map((val, inx) => {
         if (inx == 0 && val != 0) {
             return { x: x - 1, y: y }
@@ -30,8 +28,6 @@ function infoByImg(x, y, path) {
         }
         return false;
     })
-
-
     return where.filter(el => el)
 }
 
@@ -50,7 +46,6 @@ function getMap() {
     const cells = document.querySelectorAll(".cell")
     const st = document.querySelector(".cell_start")
     const ed = document.querySelector(".cell_end")
-
     all = [st, ...cells, ed]
     return all.chunk_inefficient(7)
 }
@@ -60,14 +55,12 @@ function select(event) {
     const next_img = next.src.split("/").pop();
     next.src = `./img/${imgs[Math.floor(Math.random() * imgs.length)]}`
     click++;
-
     event.toElement.src = `./img/${next_img}`;
 }
 
 window.onload = function name(params) {
     getMap()
     const cells = document.querySelectorAll(".cell")
-
     for (const el of cells) {
         el.addEventListener("click", select);
     }
@@ -77,12 +70,10 @@ window.onload = function name(params) {
 function startTimer(start) {
     let t = setInterval(() => {
         document.querySelector(".timer").innerHTML = start + "s";
-
         if (start <= 0) {
             clearInterval(t);
             startWater()
         }
-
         start -= 1;
     }, 1000)
 }
@@ -92,7 +83,6 @@ function startWater() {
     setInterval(() => {
         addWater(0, 0)
     }, 200)
-
     setTimeout(function () {
         const end = getMap()[5][6]
         if (addHUE(end, 0) > 0) {
@@ -105,17 +95,14 @@ function startWater() {
 
 function addWater(x, y) {
     const el = getMap()[x][y]
-
     if (addHUE(el, 10) >= maxHUE) {
         return;
     }
-
     let next = infoByImg(x, y, el.src).filter(el => {
         const nextEl = getMap()[el.x][el.y]
         const isConnect = infoByImg(el.x, el.y, nextEl.src).some(i => i.x == x && i.y == y)
         return isConnect
     })
-
     for (const iter of next) {
         addWater(iter.x, iter.y)
     }
@@ -124,7 +111,6 @@ function addWater(x, y) {
 function addHUE(el, inc) {
     const cur = el.style.filter.match(/\d+/g) | ["0"];
     const next = cur + inc;
-
     el.style.filter = `grayscale(${next}%)`;
     return next;
 }

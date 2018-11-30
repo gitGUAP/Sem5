@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="11.80" multi-file="no" uid="simp8f54e58d453749a7a3252760ae41c6d8">
+  <meta>
+    <name>Project</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="system-boundary" type="UmlSystemBoundary" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>14</value>
+      </counter>
+      <counter>
+        <item-type type-id="system-boundary" type="UmlSystemBoundary" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlUseCaseDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-34c10313723e49e499fadefeedb0322d" name="" task-id-sequence="0">
+    <working-schedule uid="ws-f36b397259e04d3da83cd2d74fd216d3" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="Pdc7c9dbbf38f497b8196884ccf9cccff">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-21a97ed34e75483a85490808c66b1c7b" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-a0e6c60e43db4ae78129825d6f0f27d2" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <items />
+  <models>
+    <model id="p5f0a165bee2c494485264451f40c6453_680381970" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>11/30/2018 21:37:35</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-usecase" id="p36f23b9a94044e819ff5d52a7e47db59_284688694" name="main" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>11/30/2018 21:37:35</creation-date>
+          <change-date>11/30/2018 21:57:50</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="96b8f7da4e114cbaa71b57eabb5bff5c" cid="SYS001" type="system-boundary" name="Бар" style-class="" visibility="package" change-tracking-state="added" creation-date="11/30/2018 21:57:27">
+            <style class="default" />
+          </item>
+          <item id="di20d245c5c7b24ac1af341f4b4402d9d26282" cid="SYS001" type="system-boundary" name="Бар" style-class="" visibility="package" change-tracking-state="added" creation-date="11/30/2018 21:57:27">
+            <style class="default" />
+          </item>
+          <item id="di3c0cdb73e46542ffb3fc7dc63a9749334193" cid="SYS001" type="system-boundary" name="Бар" style-class="" visibility="package" change-tracking-state="added" creation-date="11/30/2018 21:57:27">
+            <style class="default" />
+          </item>
+        </abstract-items>
+        <layer id="d1e3278097334bd3a21470e074589894" name="Default" visible="true" enabled="true" locked="false">
+          <item id="96b8f7da4e114cbaa71b57eabb5bff5c" iid="f2f26a36d7e04cdbbd9a047da77ad0f8" anchor="None" creation-date="11/30/2018 21:57:27" order-index="0" type="entity">
+            <layout ax="651" ay="410" awidth="132" aheight="37" x="651" y="410" width="132" height="37" />
+          </item>
+          <item id="di20d245c5c7b24ac1af341f4b4402d9d26282" iid="4a0c2af731a248fe93f8b7b0ef43bf2d" anchor="None" creation-date="11/30/2018 21:57:27" order-index="0" type="entity">
+            <layout ax="651" ay="216" awidth="132" aheight="37" x="651" y="216" width="132" height="37" />
+          </item>
+          <item id="di3c0cdb73e46542ffb3fc7dc63a9749334193" iid="f53a12610ca04de1ad8e7fe849c9e44a" anchor="None" creation-date="11/30/2018 21:57:27" order-index="0" type="entity">
+            <layout ax="890" ay="410" awidth="132" aheight="37" x="890" y="410" width="132" height="37" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
