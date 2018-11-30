@@ -7,15 +7,58 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+
+    <style>
+        .starter-template {
+            font-size: 140%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+
 </head>
 
 <body>
-    <main role="main" class="container">
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Главное меню</a>
+        </li>
+        </li>
+    </ul>
+
+    <main role="main" class="container desc">
 
         <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text
-                and a mostly barebones HTML document.</p>
+            <h1>Игра "Водопроводчик"</h1>
+            <p>
+                Суть игры заключается в постройке трубопровода от одного края игрового поля на время.
+                Играет один игрок. Компьютер предлагает очередной узел трубопровода, игрок может присоединить его к
+                концу трубопровода.
+                В определенный момент времени с начала игры, в трубопровод начинает подаваться вода, трубопровод.
+                Если трубопровод будет заполнен до того, как игрок закончит строительство — игрок проиграл.
+            </p>
+            <br>
+            <h3>Главное меню:</h3>
+            <img src="./desc/main.png" alt="" srcset="">
+            <br>
+            <p>
+                За каждое действие начисляются баллы. За одно нажатие клавиши начисляют 15 очков.
+                Так же каждую секунду начисляют 5 баллов. Так что нужно как можно быстрее собрать водопровод.
+                Он начинавется слева-сверху и заканчивается внизу-справа. На постройку водопровода дают 35 секунд.
+            </p>
+            <h3>Игровой процес:</h3>
+            <img src="./desc/game.png" alt="" srcset="">
+            <p>
+                Таким образом, задача игрока набрать минимально коллличство баллов.
+            </p>
+
+            <h1>Работу выполнил:</h1>
+            <p>
+                Гришин Сергей, 4631.
+            </p>
         </div>
 
     </main>
