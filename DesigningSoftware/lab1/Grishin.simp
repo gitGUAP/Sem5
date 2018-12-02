@@ -99,7 +99,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>213</value>
+        <value>218</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -1068,7 +1068,7 @@
           <item id="7c5a324bea0f4776bcacef19faf148b0" cid="DFF072" type="dfd-data-flow" name="список данных о клиенте" style-class="" visibility="package" change-tracking-state="added" creation-date="11/15/2018 18:33:57" from="218ff1f884e04e8c9da9fdf9dedf1462" to="1c1cdfeb89d74dca9be3d7e454919b81">
             <style class="default" />
           </item>
-          <item id="648ad21731cd45229533e821474d3946" cid="DFF073" type="dfd-data-flow" name="список акции, спец. предложений, адреса аудиторий и учителей" style-class="" visibility="package" change-tracking-state="added" creation-date="11/15/2018 18:35:36" from="1c1cdfeb89d74dca9be3d7e454919b81" to="d9fc18e034d24d7fac9af72f1a6fd4e6">
+          <item id="648ad21731cd45229533e821474d3946" cid="DFF073" type="dfd-data-flow" name="список акции, спец. предложений, адреса " style-class="" visibility="package" change-tracking-state="added" creation-date="11/15/2018 18:35:36" from="1c1cdfeb89d74dca9be3d7e454919b81" to="d9fc18e034d24d7fac9af72f1a6fd4e6">
             <style class="default" />
           </item>
         </abstract-items>
@@ -1140,7 +1140,7 @@
             <relation from="218ff1f884e04e8c9da9fdf9dedf1462" from-iid="e958b0479eaf4f56b748ad439f5636b5" to="1c1cdfeb89d74dca9be3d7e454919b81" to-iid="e43cafad943743179f6ba016cac754d8" />
           </item>
           <item id="648ad21731cd45229533e821474d3946" iid="c61a29d2c59d4fbb84fc924fe7c49bbe" creation-date="11/15/2018 18:35:36" order-index="11" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="145" y1="282" x2="64" y2="282" start-border-pos="0.875" end-border-pos="0.375" name-position="-1,-58">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="145" y1="282" x2="64" y2="282" start-border-pos="0.875" end-border-pos="0.375" name-position="-1,-56">
               <points>
                 <point x="145" y="282" />
                 <point x="64" y="282" />
