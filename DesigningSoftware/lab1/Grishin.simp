@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sim-project version="11.80" multi-file="no" uid="simpfb6593d00ab74a859a134ccb1c7af12d">
+<sim-project version="11.91" multi-file="no" uid="simpfb6593d00ab74a859a134ccb1c7af12d">
   <meta>
     <name>Project</name>
     <authors> </authors>
@@ -96,10 +96,6 @@
       <counter>
         <item-type type-id="frame" type="UmlFrame" />
         <value>2</value>
-      </counter>
-      <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>218</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -1467,7 +1463,7 @@
           <item id="b5ea1921f3074135967ec0ae56df65e4" cid="DFF092" type="dfd-data-flow" name="данные платежа" style-class="" visibility="package" change-tracking-state="added" creation-date="11/15/2018 19:05:32" from="4a78c70aa237485b87780cc73d1e30a1" to="di1a6edd3869c54cf7b234b87a6b0ba7f17643">
             <style class="default" />
           </item>
-          <item id="ede0bf92e17e4f88b4ab8a5c9eb1da37" cid="DFF093" type="dfd-data-flow" name="обновленный статус брони" style-class="" visibility="package" change-tracking-state="added" creation-date="11/15/2018 19:05:47" from="diebec01a7425e4bc0b34ea4211ac0a0818071" to="4a78c70aa237485b87780cc73d1e30a1">
+          <item id="ede0bf92e17e4f88b4ab8a5c9eb1da37" cid="DFF093" type="dfd-data-flow" name="обновленный статус брони" style-class="" visibility="package" change-tracking-state="added" creation-date="11/15/2018 19:05:47" from="di6918a42fa26b4d1bb1b8e564ddd789d74013" to="4a78c70aa237485b87780cc73d1e30a1">
             <style class="default" />
           </item>
           <item id="9efb8c0e4eee4771a8d2c156f7635081" cid="DFF094" type="dfd-data-flow" name="статус оплаченной брони" style-class="" visibility="package" change-tracking-state="added" creation-date="11/15/2018 19:06:02" from="4a78c70aa237485b87780cc73d1e30a1" to="32e89667cac643b28f567f5bd275e840">
