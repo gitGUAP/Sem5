@@ -41,14 +41,10 @@
       </counter>
       <counter>
         <item-type type-id="system-boundary" type="UmlSystemBoundary" />
-        <value>4</value>
+        <value>3</value>
       </counter>
       <counter>
         <item-type type-id="frame" type="UmlFrame" />
-        <value>2</value>
-      </counter>
-      <counter>
-        <item-type type-id="" type="DrawingItem" />
         <value>1</value>
       </counter>
     </entity-names>
@@ -95,37 +91,21 @@
       </counter>
       <counter>
         <item-type type-id="system-boundary" type="UmlSystemBoundary" />
-        <value>5</value>
+        <value>4</value>
       </counter>
       <counter>
         <item-type type-id="frame" type="UmlFrame" />
-        <value>3</value>
-      </counter>
-      <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>52</value>
-      </counter>
-      <counter>
-        <item-type type-id="text" type="AbstractTextItem" />
-        <value>2</value>
-      </counter>
-      <counter>
-        <item-type type-id="uml-required-interface-connector" type="UmlRequiredInterfaceConnector" />
-        <value>2</value>
-      </counter>
-      <counter>
-        <item-type type-id="uml-required-interface-end" type="UmlRequiredInterfaceEnd" />
         <value>2</value>
       </counter>
     </entity-ids>
     <diagrams>
       <counter>
         <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
-        <value>3</value>
+        <value>1</value>
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlUseCaseDiagram</type>
-        <value>3</value>
+        <value>1</value>
       </counter>
     </diagrams>
     <fields>
@@ -168,12 +148,7 @@
     </type-sets>
     <custom-types />
   </types>
-  <items>
-    <item id="6f331533be484266ab5536feb0f5bc31" cid="RQI001" type="uml-required-interface-end" name="" style-class="" visibility="package" creation-date="12/19/2018 08:46:09">
-      <style class="default" />
-      <required-interface />
-    </item>
-  </items>
+  <items />
   <models>
     <model id="pfcf9d71690d842218d548fa4c161ad2a_860903784" name="Model1" namespace="" order-index="1" expanded="true">
       <meta>
@@ -188,7 +163,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="gane-sarson-data-flow" id="p97c80b5d4fb74e7ab381ec26e2dee06a_265804258" name="cont diag" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-97">
+      <diagram type="gane-sarson-data-flow" id="p97c80b5d4fb74e7ab381ec26e2dee06a_265804258" name="cont diag" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-121">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -1999,181 +1974,6 @@
               </points>
             </layout>
             <relation from="36ca354aaaa240d68bb8fddfec55db3a" from-iid="30294c06cf7a42cca4adde4c59e78a5f" to="di20d4aedd37144615a08063c416f4ca223645" to-iid="1721f14abadf47489ae3dda6eddedbb8" />
-          </item>
-        </layer>
-      </diagram>
-      <diagram type="uml-usecase" id="p025b2fb47c4d4b6d9651e75b549357ca_322096706" name="UseCaseDiagram2" order-index="10" overview-order-index="8" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-100,-131">
-        <style>
-          <background-color index="1" color="#FFFFFFFF" />
-          <background-color index="2" color="#FFFFFFFF" />
-          <background-type type="solid" />
-        </style>
-        <meta>
-          <authors>
-            <author> </author>
-          </authors>
-          <description />
-          <creation-date>12/19/2018 08:45:05</creation-date>
-          <change-date>12/19/2018 08:45:27</change-date>
-          <revision-count>0</revision-count>
-          <version />
-        </meta>
-        <abstract-items />
-        <layer id="ad09125cec6049a898c6f5b3bfc75447" name="Default" visible="true" enabled="true" locked="false" />
-      </diagram>
-      <diagram type="uml-class" id="pe69cba370a694ef0864d998affc85092_848017975" name="ClassDiagram2" order-index="11" overview-order-index="9" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-100,-131">
-        <style>
-          <background-color index="1" color="#FFFFFFFF" />
-          <background-color index="2" color="#FFFFFFFF" />
-          <background-type type="solid" />
-        </style>
-        <meta>
-          <authors>
-            <author> </author>
-          </authors>
-          <description />
-          <creation-date>12/19/2018 08:45:31</creation-date>
-          <change-date>12/19/2018 08:45:32</change-date>
-          <revision-count>0</revision-count>
-          <version />
-        </meta>
-        <abstract-items>
-          <item id="dif0ff288d89654c2e8bb3cfb4fe9ea1404562" cid="5" type="dfd-process" name="подтверждение личных данных(email)" style-class="" visibility="package" change-tracking-state="added" creator="P5d1351ea48e442e7928ebe020164c127" creation-date="11/11/2018 12:35:36">
-            <style class="default" />
-          </item>
-          <item id="dib57b6e3204174a2f8d070f205046e2534562" cid="DFF020" type="dfd-data-flow" name="email нового пользователя" style-class="" visibility="package" change-tracking-state="added" creator="P5d1351ea48e442e7928ebe020164c127" creation-date="11/11/2018 12:46:06" to="dif0ff288d89654c2e8bb3cfb4fe9ea1404562">
-            <style class="default" />
-          </item>
-          <item id="dic0269414ef76413cafa5ac41b08635b74562" cid="DFF021" type="dfd-data-flow" name="статус подтверждения email адреса" style-class="" visibility="package" change-tracking-state="added" creator="P5d1351ea48e442e7928ebe020164c127" creation-date="11/11/2018 12:46:26" from="dif0ff288d89654c2e8bb3cfb4fe9ea1404562">
-            <style class="default" />
-          </item>
-          <item id="dic7f3a83c9ee3402d8bc90826b4c4896e4562" cid="DFF124" type="dfd-data-flow" name="тестовое письмо" style-class="" visibility="package" change-tracking-state="added" creation-date="11/17/2018 08:06:09" to="dif0ff288d89654c2e8bb3cfb4fe9ea1404562">
-            <style class="default" />
-          </item>
-          <item id="diff185e89b3474f71b80bf5022212990c4562" cid="DFF128" type="dfd-data-flow" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/17/2018 08:12:34" to="dif0ff288d89654c2e8bb3cfb4fe9ea1404562">
-            <style class="default" />
-          </item>
-        </abstract-items>
-        <layer id="3b328b5bfe0e49178b2d2f65af299cab" name="Default" visible="true" enabled="true" locked="false">
-          <item id="dif0ff288d89654c2e8bb3cfb4fe9ea1404562" iid="51188b4efa7040c9a39de9eb182e3fc6" anchor="None" creation-date="11/11/2018 12:35:36" order-index="1" type="entity">
-            <layout ax="51" ay="-110.5" awidth="120" aheight="90" x="51" y="-110.5" width="120" height="90" />
-          </item>
-          <item id="dib57b6e3204174a2f8d070f205046e2534562" iid="9d9a30d98def4beab289db003fa5beb6" creation-date="11/11/2018 12:46:06" order-index="9" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="199" y1="168" x2="148" y2="-30" start-border-pos="0.201041666666667" end-border-pos="0.548958333333333" name-position="57,0">
-              <points>
-                <point x="199" y="168" />
-                <point x="148" y="-30" />
-              </points>
-            </layout>
-            <relation to="dif0ff288d89654c2e8bb3cfb4fe9ea1404562" to-iid="51188b4efa7040c9a39de9eb182e3fc6" />
-          </item>
-          <item id="dic0269414ef76413cafa5ac41b08635b74562" iid="4d209a5fb8464b96a4fa1d6eb0978171" creation-date="11/11/2018 12:46:26" order-index="10" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="74" y1="-30" x2="125" y2="168" start-border-pos="0.702083333333333" end-border-pos="0.0479166666666667" name-position="6,6">
-              <points>
-                <point x="74" y="-30" />
-                <point x="125" y="168" />
-              </points>
-            </layout>
-            <relation from="dif0ff288d89654c2e8bb3cfb4fe9ea1404562" from-iid="51188b4efa7040c9a39de9eb182e3fc6" />
-          </item>
-          <item id="dic7f3a83c9ee3402d8bc90826b4c4896e4562" iid="b378b5ced5ab4127a1bf5d40c1f91187" creation-date="11/17/2018 08:06:09" order-index="38" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="639" y1="206" x2="111" y2="-110" start-border-pos="0.308333333333333" end-border-pos="0.125" name-position="3,15">
-              <points>
-                <point x="639" y="206" />
-                <point x="752" y="207" />
-                <point x="754" y="-154" />
-                <point x="112" y="-154" />
-                <point x="111" y="-110" />
-              </points>
-            </layout>
-            <relation to="dif0ff288d89654c2e8bb3cfb4fe9ea1404562" to-iid="51188b4efa7040c9a39de9eb182e3fc6" />
-          </item>
-          <item id="diff185e89b3474f71b80bf5022212990c4562" iid="812309abfc464ecb8504b857e89cd82d" creation-date="11/17/2018 08:12:34" order-index="44" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="-73" y1="285" x2="51" y2="-66" start-border-pos="0.125" end-border-pos="0.876388888888889" name-position="0,0">
-              <points>
-                <point x="-73" y="285" />
-                <point x="-72" y="-65" />
-                <point x="51" y="-66" />
-              </points>
-            </layout>
-            <relation to="dif0ff288d89654c2e8bb3cfb4fe9ea1404562" to-iid="51188b4efa7040c9a39de9eb182e3fc6" />
-          </item>
-        </layer>
-      </diagram>
-      <diagram type="uml-usecase" id="pf5ba3294682f4ac8b6260b42c1298b52_228904914" name="UseCaseDiagram3" order-index="12" overview-order-index="10" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
-        <style>
-          <background-color index="1" color="#FFFFFFFF" />
-          <background-color index="2" color="#FFFFFFFF" />
-          <background-type type="solid" />
-        </style>
-        <meta>
-          <authors>
-            <author> </author>
-          </authors>
-          <description />
-          <creation-date>12/19/2018 08:45:54</creation-date>
-          <change-date>12/19/2018 08:46:00</change-date>
-          <revision-count>0</revision-count>
-          <version />
-        </meta>
-        <abstract-items>
-          <item id="dd58b922d6174952ab30efaa984f0604" cid="ELEM002" type="frame" name="Frame2" style-class="" visibility="package" change-tracking-state="added" creation-date="12/19/2018 08:45:58">
-            <style class="default" />
-            <frame type="uc" />
-          </item>
-          <item id="d67fee609816464b9d0a93288d7f516e" cid="SYS004" type="system-boundary" name="System4" style-class="" owner="dd58b922d6174952ab30efaa984f0604" visibility="package" change-tracking-state="added" creation-date="12/19/2018 08:46:00">
-            <style class="default" />
-          </item>
-        </abstract-items>
-        <layer id="7eca777aaff34a18b498a8ff3d082e6a" name="Default" visible="true" enabled="true" locked="false">
-          <item id="dd58b922d6174952ab30efaa984f0604" iid="ea26a48271c3438f9beaf9648fbdf245" anchor="None" creation-date="12/19/2018 08:45:58" order-index="0" type="entity">
-            <layout ax="89" ay="255" awidth="300" aheight="200" x="89" y="255" width="300" height="200" container-layout="simple" />
-          </item>
-          <item id="d67fee609816464b9d0a93288d7f516e" iid="9482c911ece74393bffcdd16c67fb79b" container="dd58b922d6174952ab30efaa984f0604" container-iid="ea26a48271c3438f9beaf9648fbdf245" anchor="None" creation-date="12/19/2018 08:46:00" order-index="1" type="entity">
-            <layout ax="377" ay="170" awidth="300" aheight="400" x="377" y="170" width="300" height="400" />
-          </item>
-        </layer>
-      </diagram>
-      <diagram type="uml-class" id="pd769c419b11f419880c16a141cb101fd_774253367" name="ClassDiagram3" order-index="13" overview-order-index="11" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
-        <style>
-          <background-color index="1" color="#FFFFFFFF" />
-          <background-color index="2" color="#FFFFFFFF" />
-          <background-type type="solid" />
-        </style>
-        <meta>
-          <authors>
-            <author> </author>
-          </authors>
-          <description />
-          <creation-date>12/19/2018 08:46:06</creation-date>
-          <change-date>12/19/2018 08:46:09</change-date>
-          <revision-count>0</revision-count>
-          <version />
-        </meta>
-        <abstract-items>
-          <item id="143bf24abc8443c7bb138296be9a9b0f" cid="ELEM001" type="uml-required-interface-connector" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="12/19/2018 08:46:09" to="6f331533be484266ab5536feb0f5bc31">
-            <style class="default" />
-          </item>
-        </abstract-items>
-        <layer id="95320711bc5048d2a77c92d02a01ea51" name="Default" visible="true" enabled="true" locked="false">
-          <item id="143bf24abc8443c7bb138296be9a9b0f" iid="1b1f4219b58a4e6ba7c043fe9c46fa7a" creation-date="12/19/2018 08:46:09" order-index="0" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="95" y1="415" x2="195" y2="515" start-border-pos="-1" end-border-pos="0" name-position="0,0">
-              <points>
-                <point x="95" y="415" />
-                <point x="195" y="515" />
-              </points>
-            </layout>
-            <attached-parts>
-              <attached-part ref="5555c20b842e48f992f1e292d89890b7" />
-            </attached-parts>
-            <relation to="6f331533be484266ab5536feb0f5bc31" to-iid="5555c20b842e48f992f1e292d89890b7" />
-          </item>
-          <item id="6f331533be484266ab5536feb0f5bc31" iid="5555c20b842e48f992f1e292d89890b7" creation-date="12/19/2018 08:46:09" order-index="1" type="entity">
-            <layout ax="191.3388" ay="511.3388" awidth="25" aheight="25" x="191.3388" y="511.3388" width="25" height="25" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
-            <attached-parts>
-              <attached-part ref="1b1f4219b58a4e6ba7c043fe9c46fa7a" />
-            </attached-parts>
-            <required-interface />
           </item>
         </layer>
       </diagram>

@@ -20,6 +20,14 @@
         <value>1</value>
       </counter>
       <counter>
+        <item-type type-id="" type="DrawingItem" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="RoundedRectangleItem" />
+        <value>3</value>
+      </counter>
+      <counter>
         <item-type type-id="dfd-external" type="DfdExternal" />
         <value>16</value>
       </counter>
@@ -40,6 +48,10 @@
       <counter>
         <item-type type-id="initial-node" type="UmlInitialNode" />
         <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>894</value>
       </counter>
       <counter>
         <item-type type-id="interaction" type="UmlInteraction" />
@@ -92,10 +104,6 @@
       <counter>
         <item-type type-id="dfd-data-store" type="DfdDataStore" />
         <value>2</value>
-      </counter>
-      <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>61</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -182,12 +190,12 @@
           </authors>
           <description />
           <creation-date>12/22/2018 14:05:48</creation-date>
-          <change-date>12/22/2018 16:09:40</change-date>
+          <change-date>12/22/2018 14:30:54</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <abstract-items>
-          <item id="ebc5d9e3595d47faad63b1273edc2170" cid="DFE001" type="dfd-external" name="Список курсов" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:05:51">
+          <item id="ebc5d9e3595d47faad63b1273edc2170" cid="DFE001" type="dfd-external" name="Каталог мест" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:05:51">
             <style class="default" />
           </item>
           <item id="di02c894ec9b7245f2b382765f124fc8df1298" cid="IN001" type="initial-node" name="" style-class="" visibility="package" change-tracking-state="added" creator="Pd2f19d8f2d0e432291ea9380c35ad64c" creation-date="12/22/2018 13:57:03">
@@ -199,25 +207,25 @@
           <item id="die83cf58cd08f47739b3317ce224bb0296277" cid="AFN001" type="activity-final-node" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:07:42">
             <style class="default" />
           </item>
-          <item id="db3e9a456a2048d6a935c105c31075ad" cid="DFE002" type="dfd-external" name="Информация о курсе" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:08:16">
+          <item id="db3e9a456a2048d6a935c105c31075ad" cid="DFE002" type="dfd-external" name="Информация о заведении" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:08:16">
             <style class="default" />
           </item>
-          <item id="ef33c3ea255f4b20ba3ace705a1e0c0f" cid="DFE003" type="dfd-external" name="Материалы курса" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:09:12">
+          <item id="ef33c3ea255f4b20ba3ace705a1e0c0f" cid="DFE003" type="dfd-external" name="Материалы" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:09:12">
             <style class="default" />
           </item>
-          <item id="94f9bd0e81a04161bd2d860b0bb50f77" cid="DFE004" type="dfd-external" name="Личный профиль уччителя" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:09:28">
+          <item id="94f9bd0e81a04161bd2d860b0bb50f77" cid="DFE004" type="dfd-external" name="Оценки" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:09:28">
             <style class="default" />
           </item>
-          <item id="cedbba677aa44045bc224fbb6aa5fe7e" cid="DFF002" type="dfd-data-flow" name="Просмотр матеоиалов курса" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:10:02" from="db3e9a456a2048d6a935c105c31075ad" to="ef33c3ea255f4b20ba3ace705a1e0c0f">
+          <item id="cedbba677aa44045bc224fbb6aa5fe7e" cid="DFF002" type="dfd-data-flow" name="Просмотр матеалов" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:10:02" from="db3e9a456a2048d6a935c105c31075ad" to="ef33c3ea255f4b20ba3ace705a1e0c0f">
             <style class="default" />
           </item>
-          <item id="b692332a907a401eab418246f1588c81" cid="DFF003" type="dfd-data-flow" name="Вернуть на странуцу курса" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:10:14" from="ef33c3ea255f4b20ba3ace705a1e0c0f" to="db3e9a456a2048d6a935c105c31075ad">
+          <item id="b692332a907a401eab418246f1588c81" cid="DFF003" type="dfd-data-flow" name="Вернуть на странуцу заведения" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:10:14" from="ef33c3ea255f4b20ba3ace705a1e0c0f" to="db3e9a456a2048d6a935c105c31075ad">
             <style class="default" />
           </item>
           <item id="03ff5ad41bd84da688244486829f57bc" cid="DFF004" type="dfd-data-flow" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:10:42" from="94f9bd0e81a04161bd2d860b0bb50f77" to="db3e9a456a2048d6a935c105c31075ad">
             <style class="default" />
           </item>
-          <item id="b1f9b2d0ed3a43ec83f33042799eff8d" cid="DFF005" type="dfd-data-flow" name="Просмотреть профиля учителя" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:10:50" from="db3e9a456a2048d6a935c105c31075ad" to="94f9bd0e81a04161bd2d860b0bb50f77">
+          <item id="b1f9b2d0ed3a43ec83f33042799eff8d" cid="DFF005" type="dfd-data-flow" name="Просмотреть отзывы других пользователей" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:10:50" from="db3e9a456a2048d6a935c105c31075ad" to="94f9bd0e81a04161bd2d860b0bb50f77">
             <style class="default" />
           </item>
           <item id="62f5bbfa27714c9ba9ef796415fa68e5" cid="DFF006" type="dfd-data-flow" name="Выбрать отдьное завадение" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:11:11" from="ebc5d9e3595d47faad63b1273edc2170" to="db3e9a456a2048d6a935c105c31075ad">
@@ -226,19 +234,28 @@
           <item id="9e4e47573f5f4bdebc29825443704ef7" cid="ELEM009" type="universal-connector" name="Перейти на следующую страницу" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:11:30" from="ebc5d9e3595d47faad63b1273edc2170">
             <style class="default" />
           </item>
-          <item id="e973813cccd24823bb753d5661ae4700" cid="ELEM010" type="universal-connector" name="Был выбран курс" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:11:54" from="db3e9a456a2048d6a935c105c31075ad" to="die83cf58cd08f47739b3317ce224bb0296277">
+          <item id="e973813cccd24823bb753d5661ae4700" cid="ELEM010" type="universal-connector" name="Было выбрано заведение" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:11:54" from="db3e9a456a2048d6a935c105c31075ad" to="die83cf58cd08f47739b3317ce224bb0296277">
             <style class="default" />
           </item>
           <item id="37893e4dee294c6caaf60a58fa3c007f" cid="ELEM011" type="universal-connector" name="Изменить критерии поиска" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:12:42" from="ebc5d9e3595d47faad63b1273edc2170" to="ebc5d9e3595d47faad63b1273edc2170">
             <style class="default" />
           </item>
-          <item id="bc665caff1d34e19a74b8d5d036541c4" cid="DFE005" type="dfd-external" name="Выбор предмета" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:12:57">
+          <item id="bc665caff1d34e19a74b8d5d036541c4" cid="DFE005" type="dfd-external" name="Выбор района на карте города" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:12:57">
             <style class="default" />
           </item>
-          <item id="c125d4e6ae8848db89e104f53bb5c94f" cid="DFF007" type="dfd-data-flow" name="Изменить фильтры  поиска" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:14:35" from="ebc5d9e3595d47faad63b1273edc2170" to="bc665caff1d34e19a74b8d5d036541c4">
+          <item id="c125d4e6ae8848db89e104f53bb5c94f" cid="DFF007" type="dfd-data-flow" name="Изменить район поиска" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:14:35" from="ebc5d9e3595d47faad63b1273edc2170" to="bc665caff1d34e19a74b8d5d036541c4">
             <style class="default" />
           </item>
           <item id="0493524fd189450dbcab434f93ea6d67" cid="DFF008" type="dfd-data-flow" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:14:43" from="bc665caff1d34e19a74b8d5d036541c4" to="ebc5d9e3595d47faad63b1273edc2170">
+            <style class="default" />
+          </item>
+          <item id="09798d987e5c469db7c66a990e4cdd6a" cid="DFE006" type="dfd-external" name="Завадение на карте" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:15:14">
+            <style class="default" />
+          </item>
+          <item id="302599a231c84c7597f94ac51707895f" cid="DFF009" type="dfd-data-flow" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:15:30" from="db3e9a456a2048d6a935c105c31075ad" to="09798d987e5c469db7c66a990e4cdd6a">
+            <style class="default" />
+          </item>
+          <item id="0a095c234a12414f841cf67926400745" cid="DFF010" type="dfd-data-flow" name="Перейти на вкладку &quot;На карте&quot;" style-class="" visibility="package" change-tracking-state="added" creation-date="12/22/2018 14:15:43" from="09798d987e5c469db7c66a990e4cdd6a" to="db3e9a456a2048d6a935c105c31075ad">
             <style class="default" />
           </item>
         </abstract-items>
@@ -250,19 +267,19 @@
             <layout ax="532" ay="52.5" awidth="25" aheight="25" x="532" y="52.5" width="25" height="25" name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" />
           </item>
           <item id="0493524fd189450dbcab434f93ea6d67" iid="9bb54c09dd0a49c599230b94072e0f5f" creation-date="12/22/2018 14:14:43" order-index="16" type="relation">
-            <layout line-style="rounded-rectangular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="72" y1="221" x2="321" y2="221" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
+            <layout line-style="rounded-rectangular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="62" y1="221" x2="321" y2="221" start-border-pos="0.375" end-border-pos="0.875" name-position="0,0">
               <points>
-                <point x="72" y="221" />
+                <point x="62" y="221" />
                 <point x="321" y="221" />
               </points>
             </layout>
             <relation from="bc665caff1d34e19a74b8d5d036541c4" from-iid="80ee4d24bdd74a3989747b36396cb5f5" to="ebc5d9e3595d47faad63b1273edc2170" to-iid="8c1053b578d94dcf9cf0be9c28c6dc4c" />
           </item>
           <item id="c125d4e6ae8848db89e104f53bb5c94f" iid="f8046756d6834173b512b6f040cb5714" creation-date="12/22/2018 14:14:35" order-index="15" type="relation">
-            <layout line-style="rounded-rectangular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="321" y1="221" x2="72" y2="221" start-border-pos="0.875" end-border-pos="0.375" name-position="-73,-110">
+            <layout line-style="rounded-rectangular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="321" y1="221" x2="62" y2="221" start-border-pos="0.875" end-border-pos="0.375" name-position="-72,-110">
               <points>
                 <point x="321" y="221" />
-                <point x="72" y="221" />
+                <point x="62" y="221" />
               </points>
             </layout>
             <relation from="ebc5d9e3595d47faad63b1273edc2170" from-iid="8c1053b578d94dcf9cf0be9c28c6dc4c" to="bc665caff1d34e19a74b8d5d036541c4" to-iid="80ee4d24bdd74a3989747b36396cb5f5" />
@@ -278,7 +295,7 @@
             <relation from="ebc5d9e3595d47faad63b1273edc2170" from-iid="8c1053b578d94dcf9cf0be9c28c6dc4c" to="ebc5d9e3595d47faad63b1273edc2170" to-iid="8c1053b578d94dcf9cf0be9c28c6dc4c" />
           </item>
           <item id="bc665caff1d34e19a74b8d5d036541c4" iid="80ee4d24bdd74a3989747b36396cb5f5" anchor="None" creation-date="12/22/2018 14:12:57" order-index="14" type="entity">
-            <layout ax="-48" ay="186" awidth="120" aheight="70" x="-48" y="186" width="120" height="70" />
+            <layout ax="-58" ay="186" awidth="120" aheight="70" x="-58" y="186" width="120" height="70" />
           </item>
           <item id="9e4e47573f5f4bdebc29825443704ef7" iid="7b1b7b8fd3034bf983bb29bf4b8c4fd2" creation-date="12/22/2018 14:11:30" order-index="11" type="relation">
             <layout line-style="rounded-rectangular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="381" y1="186" x2="318" y2="219" start-border-pos="0.125" end-border-pos="0.875" name-position="19,-42">
@@ -300,6 +317,27 @@
           </item>
           <item id="ebc5d9e3595d47faad63b1273edc2170" iid="8c1053b578d94dcf9cf0be9c28c6dc4c" anchor="None" creation-date="12/22/2018 14:05:51" order-index="0" type="entity">
             <layout ax="321" ay="186" awidth="120" aheight="70" x="321" y="186" width="120" height="70" />
+          </item>
+          <item id="0a095c234a12414f841cf67926400745" iid="882c0e9c3c6c42c6bd6b49c0770f3d73" creation-date="12/22/2018 14:15:43" order-index="19" type="relation">
+            <layout line-style="rounded-rectangular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="660" y1="434" x2="673" y2="274" start-border-pos="0" end-border-pos="0.717194572091103" name-position="46,4">
+              <points>
+                <point x="660" y="434" />
+                <point x="673" y="274" />
+              </points>
+            </layout>
+            <relation from="09798d987e5c469db7c66a990e4cdd6a" from-iid="2cae810f1b7540bea620edae001b6446" to="db3e9a456a2048d6a935c105c31075ad" to-iid="53c1015a0a334fdfa4d34704105f9d1f" />
+          </item>
+          <item id="302599a231c84c7597f94ac51707895f" iid="3b0459b46e0e4e38b9973144a4d77bbf" creation-date="12/22/2018 14:15:30" order-index="18" type="relation">
+            <layout line-style="rounded-rectangular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="754" y1="274" x2="780" y2="434" start-border-pos="0.625565610859729" end-border-pos="0.25" name-position="0,0">
+              <points>
+                <point x="754" y="274" />
+                <point x="780" y="434" />
+              </points>
+            </layout>
+            <relation from="db3e9a456a2048d6a935c105c31075ad" from-iid="53c1015a0a334fdfa4d34704105f9d1f" to="09798d987e5c469db7c66a990e4cdd6a" to-iid="2cae810f1b7540bea620edae001b6446" />
+          </item>
+          <item id="09798d987e5c469db7c66a990e4cdd6a" iid="2cae810f1b7540bea620edae001b6446" anchor="None" creation-date="12/22/2018 14:15:14" order-index="17" type="entity">
+            <layout ax="660" ay="434" awidth="120" aheight="70" x="660" y="434" width="120" height="70" />
           </item>
           <item id="e973813cccd24823bb753d5661ae4700" iid="4b5b7a7d047e450282178f2fffa96e70" creation-date="12/22/2018 14:11:54" order-index="12" type="relation">
             <layout line-style="rounded-rectangular" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="754" y1="168" x2="544" y2="77" start-border-pos="0.124434389140272" end-border-pos="0.625" name-position="6,-52">
